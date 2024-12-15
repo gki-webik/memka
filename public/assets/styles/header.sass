@@ -1,3 +1,4 @@
+@import "colors"
 header
     margin: 0
     padding: 0
@@ -11,12 +12,13 @@ header
         height: 70px
         color: #fff
         justify-content: space-between
-        border-bottom: 1px solid #103812
+        border-bottom: 1px solid $color-3
         position: relative
         z-index: 3
         padding: 0 20px
         .logo
             img
+                cursor: pointer
                 height: 60px
         nav
             display: flex
@@ -26,6 +28,32 @@ header
             a
                 color: #fff
                 text-decoration: none
+                transition: color ease-in-out 0.15s
+                &:hover
+                    color: $color-1
+        .menuToggle
+            padding: 5px
+            height: 40px
+            width: 40px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 5px
+            cursor: pointer
+            span
+                display: block
+                height: 2px
+                background-color: #fff
+                transition: background-color ease-in-out 0.15s
+                &.is-1
+                    width: 35px
+                &.is-2
+                    width: 20px
+                    margin-left: 15px
+            &:hover span
+                background-color: $color-1
+
     .is-blur
         width: 100%
         height: 70px

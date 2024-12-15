@@ -3,7 +3,11 @@
     <header>
       <div class="content">
         <div class="logo">
-          <img src="/assets/images/logo.png" alt="Логотип" />
+          <img
+            @click="linkTo('/')"
+            src="/assets/images/logo.png"
+            alt="Логотип"
+          />
         </div>
         <nav>
           <a href="">Анимация</a>
@@ -14,6 +18,10 @@
           <a href="">Реклама</a>
           <a href="">Контакты</a>
         </nav>
+        <div class="menuToggle">
+          <span class="is-1"></span>
+          <span class="is-2"></span>
+        </div>
       </div>
       <div class="is-blur"></div>
     </header>
@@ -23,3 +31,13 @@
 <style scoped>
 @import "~/public/assets/styles/dist/min/header.min.css";
 </style>
+
+<script>
+export default {
+  methods: {
+    linkTo(path) {
+      this.$router.push(path);
+    },
+  },
+};
+</script>
