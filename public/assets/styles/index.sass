@@ -58,6 +58,49 @@
                     @media screen and (max-width: 395px)
                         font-size: 1.2rem
 
+        a.lets_go
+            font-size: 3.5rem
+            color: #fff
+            text-decoration: none
+            width: 270px
+            height: 50px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 1.4rem
+            outline: 1px solid #fff
+            cursor: pointer
+            position: relative
+            font-weight: 600
+            transition: color 0.15s ease-in-out
+            &:hover
+                color: $color-1
+            &:hover
+                span
+                    transition: top 0.15s ease-in-out, transform 0.15s ease-in-out, right 0.15s ease-in-out, left 0.15s ease-in-out
+                    &.is-1
+                        top: -10px
+                        left: 10px
+                        transform: rotate(-90deg)
+                    &.is-2
+                        right: 10px
+                        top: 20px
+                        transform: rotate(90deg)
+            span
+                position: absolute
+                width: 0
+                height: 0
+                border-top: 20px solid $color-1
+                border-left: 20px solid transparent
+                border-bottom: 20px solid transparent
+                transition: top 0.15s ease-in-out, transform 0.15s ease-in-out, right 0.15s ease-in-out, left 0.15s ease-in-out
+                &.is-1
+                    left: 0
+                    bottom: 0
+                    transform: rotate(-180deg)
+                &.is-2
+                    right: 0
+                    top: 0
     .hackerImg
         margin-right: 30px
         position: relative

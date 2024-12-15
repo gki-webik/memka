@@ -119,6 +119,72 @@
     font-size: 1.2rem;
   }
 }
+.block1 .text a.lets_go {
+  font-size: 3.5rem;
+  color: #fff;
+  text-decoration: none;
+  width: 270px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+  outline: 1px solid #fff;
+  cursor: pointer;
+  position: relative;
+  font-weight: 600;
+  -webkit-transition: color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out;
+}
+.block1 .text a.lets_go:hover {
+  color: #00CF0E;
+}
+.block1 .text a.lets_go:hover span {
+  -webkit-transition: top 0.15s ease-in-out, right 0.15s ease-in-out, left 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  transition: top 0.15s ease-in-out, right 0.15s ease-in-out, left 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  transition: top 0.15s ease-in-out, transform 0.15s ease-in-out, right 0.15s ease-in-out, left 0.15s ease-in-out;
+  transition: top 0.15s ease-in-out, transform 0.15s ease-in-out, right 0.15s ease-in-out, left 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+}
+.block1 .text a.lets_go:hover span.is-1 {
+  top: -10px;
+  left: 10px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.block1 .text a.lets_go:hover span.is-2 {
+  right: 10px;
+  top: 20px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.block1 .text a.lets_go span {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 20px solid #00CF0E;
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  -webkit-transition: top 0.15s ease-in-out, right 0.15s ease-in-out, left 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  transition: top 0.15s ease-in-out, right 0.15s ease-in-out, left 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  transition: top 0.15s ease-in-out, transform 0.15s ease-in-out, right 0.15s ease-in-out, left 0.15s ease-in-out;
+  transition: top 0.15s ease-in-out, transform 0.15s ease-in-out, right 0.15s ease-in-out, left 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+}
+.block1 .text a.lets_go span.is-1 {
+  left: 0;
+  bottom: 0;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.block1 .text a.lets_go span.is-2 {
+  right: 0;
+  top: 0;
+}
 .block1 .hackerImg {
   margin-right: 30px;
   position: relative;

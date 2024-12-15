@@ -10,6 +10,9 @@
               СРЕДИ ПОДПИСЧИКОВ  И ПРИВЛЕКИТЕ НОВЫХ ИНВЕСТОРОВ
             </span>
           </h1>
+          <a href="" class="lets_go">
+            <span class="is-1"></span>ВПЕРЕД <span class="is-2"></span>
+          </a>
         </div>
         <div class="hackerImg">
           <img src="/assets/images/1.gif" class="is-1" alt="" />
@@ -17,6 +20,7 @@
         </div>
       </div>
     </div>
+    <div class="block2"></div>
   </main>
 </template>
 
