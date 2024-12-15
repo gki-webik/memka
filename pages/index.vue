@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="max_container">
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam iste enim
     temporibus et illo facilis laboriosam provident quae omnis, tenetur
     repudiandae, reprehenderit eveniet id mollitia atque adipisci fuga autem ad
@@ -107,3 +107,7 @@
     et facere maxime, quas adipisci?
   </div>
 </template>
+
+<style scoped>
+@import "~/public/assets/styles/dist/min/index.min.css";
+</style>
