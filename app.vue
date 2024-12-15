@@ -5,7 +5,7 @@
       :getCurrentLang="getCurrentLang"
       :lang="lang"
     ></Header>
-    <NuxtPage />
+    <NuxtPage :getCurrentLang="getCurrentLang" />
     <Footer
       :changeLang="changeLang"
       :getCurrentLang="getCurrentLang"

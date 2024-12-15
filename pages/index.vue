@@ -174,5 +174,14 @@ export default {
       ],
     };
   },
+  props: {
+    getCurrentLang: {
+      type: Function,
+      required: true,
+    },
+  },
+  mounted() {
+    this.getCurrentLang() === "en" && this.$router.replace("/en");
+  },
 };
 </script>
