@@ -142,6 +142,11 @@
   -webkit-transition: color 0.15s ease-in-out;
   transition: color 0.15s ease-in-out;
 }
+@media screen and (max-width: 955px) {
+  .block1 .text a.lets_go {
+    margin: 0 auto;
+  }
+}
 .block1 .text a.lets_go:hover {
   color: #00CF0E;
 }
