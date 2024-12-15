@@ -68,7 +68,7 @@ header .content .menuToggle {
 }
 @media screen and (min-width: 850px) {
   header .content .menuToggle {
-    display: none;
+    display: none !important;
   }
 }
 header .content .menuToggle span {
