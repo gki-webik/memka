@@ -465,7 +465,7 @@
   .block3 .items .item .title {
     font-size: 0.9rem;
   }
-  .block3 .items .item .title:not(.is-mem) {
+  .block3 .items .item .title:not(.is-mem):not(.is-static) {
     bottom: -46px;
   }
 }

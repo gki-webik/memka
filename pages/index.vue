@@ -107,23 +107,23 @@
         </div>
         <div class="item">
           <img src="/assets/images/18.png" alt="" loading="lazy" />
-          <div class="title"><span>Статичный стикер</span></div>
+          <div class="title is-static"><span>Статичный стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/19.png" alt="" loading="lazy" />
-          <div class="title"><span>Статичный стикер</span></div>
+          <div class="title is-static"><span>Статичный стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/20.png" alt="" loading="lazy" />
-          <div class="title"><span>Статичный стикер</span></div>
+          <div class="title is-static"><span>Статичный стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/21.png" alt="" loading="lazy" />
-          <div class="title"><span>Статичный стикер</span></div>
+          <div class="title is-static"><span>Статичный стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/22.png" alt="" loading="lazy" />
-          <div class="title"><span>Статичный стикер</span></div>
+          <div class="title is-static"><span>Статичный стикер</span></div>
         </div>
       </div>
     </div>
