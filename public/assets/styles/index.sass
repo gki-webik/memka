@@ -136,10 +136,12 @@
                     width: 430px
                 @media screen and (max-width: 485px)
                     width: 300px
-                    top: -70px
+                    top: -60px
                     left: 20px
 .block2
     padding: 75px 50px
+    @media screen  and (max-width: 400px)
+        padding: 75px 20px
     h2
         color: $color-1
         font-size: 3rem
@@ -176,6 +178,8 @@
                 width: 100%
 .block3
     padding: 75px 50px
+    @media screen  and (max-width: 400px)
+        padding: 75px 20px
     h2
         color: $color-1
         font-size: 3rem
@@ -186,17 +190,29 @@
     h3
         color: #fff
         font-size: 1.6rem
+        line-height: 1.4
+        @media screen and (max-width: 400px)
+            font-size: 1.3rem
+
     .items
         display: flex
         justify-content: center
         align-items: center
         flex-wrap: wrap
-        margin-top: 100px
         gap: 20px
         .item
             position: relative
             height: 250px
-            width: 300px
+            width: 315px
+            @media screen and (max-width: 732px)
+                height: 200px
+                width: 300px
+            @media screen and (max-width: 744px)
+                width: 200px
+                height: 135px
+            @media screen and (max-width: 521px)
+                width: 130px
+                height: 150px
             &::before
                 content: ""
                 position: absolute
@@ -206,14 +222,27 @@
                 border-radius: 15px
                 background: linear-gradient(230deg, $color-1, green)
                 box-shadow: 0 0 25px 4px $color-3
+                @media screen and (max-width: 744px)
+                    height: 100px
+                @media screen and (max-width: 521px)
+                    height: 70px
+                    border-radius: 10px
             img
                 width: 100%
                 bottom: 0
                 position: absolute
-                max-height: 220px
                 user-select: none
                 pointer-events: none
                 object-fit: contain
+                height: 225px
+                @media screen and (max-width: 744px)
+                    height: 120px
+                @media screen and (max-width: 521px)
+                    height: 100px
+                &.is-17
+                    right: -46px
+                &.is-12
+                    left: -35px
             .title
                 text-align: center
                 color: $color-1
@@ -221,3 +250,10 @@
                 bottom: -28px
                 font-weight: 600
                 width: 100%
+                display: flex
+                justify-content: center
+                align-items: start
+                @media screen and (max-width: 521px)
+                    font-size: 0.9rem
+                    &:not(.is-mem)
+                        bottom: -46px

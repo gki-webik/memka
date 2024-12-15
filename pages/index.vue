@@ -44,76 +44,86 @@
       <h3>ПРИМЕР ПРОЕКТОВ РЕАЛИЗОВАННЫХ НАШЕЙ СТУДИЕЙ</h3>
       <div class="items">
         <div class="item">
-          <img src="/assets/images/5.png" alt="" loading="lazy" />
-          <div class="title">Анимированный стикер</div>
+          <img src="/assets/images/5.png" class="is-5" alt="" loading="lazy" />
+          <div class="title"><span>Анимированный стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/6.png" alt="" loading="lazy" />
-          <div class="title">Анимированный стикер</div>
+          <div class="title"><span>Анимированный стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/7.png" alt="" loading="lazy" />
-          <div class="title">Анимированный стикер</div>
+          <div class="title"><span>Анимированный стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/8.png" alt="" loading="lazy" />
-          <div class="title">Анимированный стикер</div>
+          <div class="title"><span>Анимированный стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/9.png" alt="" loading="lazy" />
-          <div class="title">Анимированный стикер</div>
+          <div class="title"><span>Анимированный стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/10.png" alt="" loading="lazy" />
-          <div class="title">Анимированный стикер</div>
+          <div class="title"><span>Анимированный стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/11.png" alt="" loading="lazy" />
-          <div class="title">Мем стикер</div>
+          <div class="title is-mem"><span>Мем стикер</span></div>
         </div>
         <div class="item">
-          <img src="/assets/images/12.png" alt="" loading="lazy" />
-          <div class="title">Мем стикер</div>
+          <img
+            src="/assets/images/12.png"
+            class="is-12"
+            alt=""
+            loading="lazy"
+          />
+          <div class="title is-mem"><span>Мем стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/13.png" alt="" loading="lazy" />
-          <div class="title">Мем стикер</div>
+          <div class="title is-mem"><span>Мем стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/14.png" alt="" loading="lazy" />
-          <div class="title">Мем стикер</div>
+          <div class="title is-mem"><span>Мем стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/15.png" alt="" loading="lazy" />
-          <div class="title">Мем стикер</div>
+          <div class="title is-mem"><span>Мем стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/16.png" alt="" loading="lazy" />
-          <div class="title">Мем стикер</div>
+          <div class="title is-mem"><span>Мем стикер</span></div>
         </div>
         <div class="item">
-          <img src="/assets/images/17.png" alt="" loading="lazy" />
-          <div class="title">Мем стикер</div>
+          <img
+            src="/assets/images/17.png"
+            class="is-17"
+            alt=""
+            loading="lazy"
+          />
+          <div class="title is-mem"><span>Мем стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/18.png" alt="" loading="lazy" />
-          <div class="title">Статичный стикер</div>
+          <div class="title"><span>Статичный стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/19.png" alt="" loading="lazy" />
-          <div class="title">Статичный стикер</div>
+          <div class="title"><span>Статичный стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/20.png" alt="" loading="lazy" />
-          <div class="title">Статичный стикер</div>
+          <div class="title"><span>Статичный стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/21.png" alt="" loading="lazy" />
-          <div class="title">Статичный стикер</div>
+          <div class="title"><span>Статичный стикер</span></div>
         </div>
         <div class="item">
           <img src="/assets/images/22.png" alt="" loading="lazy" />
-          <div class="title">Статичный стикер</div>
+          <div class="title"><span>Статичный стикер</span></div>
         </div>
       </div>
     </div>

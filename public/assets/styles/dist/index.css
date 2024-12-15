@@ -248,13 +248,18 @@
 @media screen and (max-width: 485px) {
   .block1 .hackerImg img.is-2 {
     width: 300px;
-    top: -70px;
+    top: -60px;
     left: 20px;
   }
 }
 
 .block2 {
   padding: 75px 50px;
+}
+@media screen and (max-width: 400px) {
+  .block2 {
+    padding: 75px 20px;
+  }
 }
 .block2 h2 {
   color: #00CF0E;
@@ -329,6 +334,11 @@
 .block3 {
   padding: 75px 50px;
 }
+@media screen and (max-width: 400px) {
+  .block3 {
+    padding: 75px 20px;
+  }
+}
 .block3 h2 {
   color: #00CF0E;
   font-size: 3rem;
@@ -339,6 +349,12 @@
 .block3 h3 {
   color: #fff;
   font-size: 1.6rem;
+  line-height: 1.4;
+}
+@media screen and (max-width: 400px) {
+  .block3 h3 {
+    font-size: 1.3rem;
+  }
 }
 .block3 .items {
   display: -webkit-box;
@@ -352,13 +368,30 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 100px;
   gap: 20px;
 }
 .block3 .items .item {
   position: relative;
   height: 250px;
-  width: 300px;
+  width: 315px;
+}
+@media screen and (max-width: 732px) {
+  .block3 .items .item {
+    height: 200px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 744px) {
+  .block3 .items .item {
+    width: 200px;
+    height: 135px;
+  }
+}
+@media screen and (max-width: 521px) {
+  .block3 .items .item {
+    width: 130px;
+    height: 150px;
+  }
 }
 .block3 .items .item::before {
   content: "";
@@ -371,11 +404,21 @@
   -webkit-box-shadow: 0 0 25px 4px #103812;
           box-shadow: 0 0 25px 4px #103812;
 }
+@media screen and (max-width: 744px) {
+  .block3 .items .item::before {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 521px) {
+  .block3 .items .item::before {
+    height: 70px;
+    border-radius: 10px;
+  }
+}
 .block3 .items .item img {
   width: 100%;
   bottom: 0;
   position: absolute;
-  max-height: 220px;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -383,6 +426,23 @@
   pointer-events: none;
   -o-object-fit: contain;
      object-fit: contain;
+  height: 225px;
+}
+@media screen and (max-width: 744px) {
+  .block3 .items .item img {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 521px) {
+  .block3 .items .item img {
+    height: 100px;
+  }
+}
+.block3 .items .item img.is-17 {
+  right: -46px;
+}
+.block3 .items .item img.is-12 {
+  left: -35px;
 }
 .block3 .items .item .title {
   text-align: center;
@@ -391,4 +451,21 @@
   bottom: -28px;
   font-weight: 600;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+@media screen and (max-width: 521px) {
+  .block3 .items .item .title {
+    font-size: 0.9rem;
+  }
+  .block3 .items .item .title:not(.is-mem) {
+    bottom: -46px;
+  }
 }
