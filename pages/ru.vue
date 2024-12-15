@@ -174,5 +174,8 @@ export default {
       ],
     };
   },
+  mounted() {
+    localStorage.setItem("currentLang", "ru");
+  },
 };
 </script>

@@ -4,14 +4,14 @@
       <div class="center">
         <div class="text">
           <h1>
-            <span class="is-1">СОЗДАЙТЕ</span>
-            <span class="is-2"> <span class="is-line">АЖ</span>ИОТАЖ </span>
-            <span class="is-3">
-              СРЕДИ ПОДПИСЧИКОВ  И ПРИВЛЕКИТЕ НОВЫХ ИНВЕСТОРОВ
+            <span class="is-1">BUILD</span>
+            <span class="is-2 is-small">
+              <span class="is-line">HY</span>PE FOLLOWING
             </span>
+            <span class="is-3"> AMONGST DEGENS AND RETAIL INVESTORS </span>
           </h1>
           <a href="#b2" class="lets_go">
-            <span class="is-1"></span>ВПЕРЕД <span class="is-2"></span>
+            <span class="is-1"></span>LETS GO <span class="is-2"></span>
           </a>
         </div>
         <div class="hackerImg">
@@ -21,27 +21,24 @@
       </div>
     </div>
     <div class="block2" id="b2">
-      <h2><span class="is-line">Ме</span>мы</h2>
+      <h2><span class="is-line">Me</span>mes</h2>
       <div class="items">
         <div class="item is-1">
-          <div class="text">
-            ВЫДЕЛЯЙТЕСЬ ИЗ ТОЛПЫ И <br />
-            ПРИВЛЕКАЙТЕ БОЛЬШЕ
-          </div>
+          <div class="text">STAND OUT FROM THE CROWD</div>
           <img src="/assets/images/3.png" alt="" loading="lazy" />
         </div>
         <div class="item is-2">
           <div class="text is-right">
-            НОВЫХ ПОДПИСЧИКОВ И <br />
-            ПОТЕНЦИАЛЬНЫХ КЛИЕНТОВ
+            AND MAXIMIZE SOCIAL MEDIA<br />
+            GROWTH
           </div>
           <img src="/assets/images/4.gif" alt="" loading="lazy" />
         </div>
       </div>
     </div>
     <div class="block3" id="b3">
-      <h2><span class="is-line">Ст</span>икеры</h2>
-      <h3>ПРИМЕР ПРОЕКТОВ РЕАЛИЗОВАННЫХ НАШЕЙ СТУДИЕЙ</h3>
+      <h2><span class="is-line">St</span>ickers</h2>
+      <h3>JUST A FEW OF THE PROJECTS WE'VE WORKED WITH</h3>
       <div class="items">
         <div v-for="(item, index) in block3Items" :key="index" class="item">
           <img :src="item.src" :class="item.class" alt="" loading="lazy" />
@@ -67,112 +64,115 @@ export default {
           src: "/assets/images/5.png",
           class: "is-5",
           titleClass: "title is-animated",
-          title: "Анимированный стикер",
+          title: "Animated Stickers",
         },
         {
           src: "/assets/images/6.png",
           class: "is-6",
           titleClass: "title is-animated",
-          title: "Анимированный стикер",
+          title: "Animated Stickers",
         },
         {
           src: "/assets/images/7.png",
           class: "is-7",
           titleClass: "title is-animated",
-          title: "Анимированный стикер",
+          title: "Animated Stickers",
         },
         {
           src: "/assets/images/8.png",
           class: "is-8",
           titleClass: "title is-animated",
-          title: "Анимированный стикер",
+          title: "Animated Stickers",
         },
         {
           src: "/assets/images/9.png",
           class: "is-9",
           titleClass: "title is-animated",
-          title: "Анимированный стикер",
+          title: "Animated Stickers",
         },
         {
           src: "/assets/images/10.png",
           class: "is-10",
           titleClass: "title is-animated",
-          title: "Анимированный стикер",
+          title: "Animated Stickers",
         },
         {
           src: "/assets/images/11.png",
           class: "is-11",
           titleClass: "title is-mem",
-          title: "Мем стикер",
+          title: "Memes Stickers",
         },
         {
           src: "/assets/images/12.png",
           class: "is-12",
           titleClass: "title is-mem",
-          title: "Мем стикер",
+          title: "Memes Stickers",
         },
         {
           src: "/assets/images/13.png",
           class: "is-13",
           titleClass: "title is-mem",
-          title: "Мем стикер",
+          title: "Memes Stickers",
         },
         {
           src: "/assets/images/14.png",
           class: "is-14",
           titleClass: "title is-mem",
-          title: "Мем стикер",
+          title: "Memes Stickers",
         },
         {
           src: "/assets/images/15.png",
           class: "is-15",
           titleClass: "title is-mem",
-          title: "Мем стикер",
+          title: "Memes Stickers",
         },
         {
           src: "/assets/images/16.png",
           class: "is-16",
           titleClass: "title is-mem",
-          title: "Мем стикер",
+          title: "Memes Stickers",
         },
         {
           src: "/assets/images/17.png",
           class: "is-17",
           titleClass: "title is-mem",
-          title: "Мем стикер",
+          title: "Memes Stickers",
         },
         {
           src: "/assets/images/18.png",
           class: "is-18",
           titleClass: "title is-static",
-          title: "Статичный стикер",
+          title: "Static Stickers",
         },
         {
           src: "/assets/images/19.png",
           class: "is-19",
           titleClass: "title is-static",
-          title: "Статичный стикер",
+          title: "Static Stickers",
         },
         {
           src: "/assets/images/20.png",
           class: "is-20",
           titleClass: "title is-static",
-          title: "Статичный стикер",
+          title: "Static Stickers",
         },
         {
           src: "/assets/images/21.png",
           class: "is-21",
           titleClass: "title is-static",
-          title: "Статичный стикер",
+          title: "Static Stickers",
         },
         {
           src: "/assets/images/22.png",
           class: "is-22",
           titleClass: "title is-static",
-          title: "Статичный стикер",
+          title: "Static Stickers",
         },
       ],
     };
+  },
+  mounted() {
+    localStorage.setItem("currentLang", "en");
   },
 };
 </script>

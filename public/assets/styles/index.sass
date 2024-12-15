@@ -39,12 +39,20 @@
                 &.is-2
                     font-size: 7rem
                     color: $color-1
+                    &.is-small
+                        font-size: 6rem
                     @media screen and (max-width: 1310px)
                         font-size: 5.5rem
+                        &.is-small
+                            font-size: 5.5rem
                     @media screen and (max-width: 1000px)
                         font-size: 4rem
+                        &.is-small
+                            font-size: 4rem
                     @media screen and (max-width: 395px)
                         font-size: 3.3rem
+                        &.is-small
+                            font-size: 3.3rem
                 &.is-line
                     border-bottom: 2px solid $color-1
                 &.is-3
@@ -240,9 +248,17 @@
                 @media screen and (max-width: 521px)
                     height: 100px
                 &.is-17
-                    right: -46px
+                    right: -50px
+                    @media screen and (max-width: 744px)
+                        right: -44px
+                    @media screen and (max-width: 521px)
+                        right: -17px
                 &.is-12
-                    left: -35px
+                    left: -40px
+                    @media screen and (max-width: 744px)
+                        left: -37px
+                    @media screen and (max-width: 521px)
+                        left: -13px
             .title
                 text-align: center
                 color: $color-1

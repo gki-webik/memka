@@ -78,8 +78,14 @@
   font-size: 7rem;
   color: #00CF0E;
 }
+.block1 .text h1 span.is-2.is-small {
+  font-size: 6rem;
+}
 @media screen and (max-width: 1310px) {
   .block1 .text h1 span.is-2 {
+    font-size: 5.5rem;
+  }
+  .block1 .text h1 span.is-2.is-small {
     font-size: 5.5rem;
   }
 }
@@ -87,9 +93,15 @@
   .block1 .text h1 span.is-2 {
     font-size: 4rem;
   }
+  .block1 .text h1 span.is-2.is-small {
+    font-size: 4rem;
+  }
 }
 @media screen and (max-width: 395px) {
   .block1 .text h1 span.is-2 {
+    font-size: 3.3rem;
+  }
+  .block1 .text h1 span.is-2.is-small {
     font-size: 3.3rem;
   }
 }
@@ -439,10 +451,30 @@
   }
 }
 .block3 .items .item img.is-17 {
-  right: -46px;
+  right: -50px;
+}
+@media screen and (max-width: 744px) {
+  .block3 .items .item img.is-17 {
+    right: -44px;
+  }
+}
+@media screen and (max-width: 521px) {
+  .block3 .items .item img.is-17 {
+    right: -17px;
+  }
 }
 .block3 .items .item img.is-12 {
-  left: -35px;
+  left: -40px;
+}
+@media screen and (max-width: 744px) {
+  .block3 .items .item img.is-12 {
+    left: -37px;
+  }
+}
+@media screen and (max-width: 521px) {
+  .block3 .items .item img.is-12 {
+    left: -13px;
+  }
 }
 .block3 .items .item .title {
   text-align: center;
