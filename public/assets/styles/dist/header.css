@@ -4,6 +4,8 @@ header {
   position: fixed;
   width: 100%;
   height: 70px;
+  max-width: 3000px;
+  top: 0;
 }
 header .content {
   -webkit-box-align: center;

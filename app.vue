@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="max_container">
     <Header></Header>
     <NuxtPage />
     <Footer></Footer>

@@ -8,7 +8,7 @@
             src="/assets/images/logo.png"
             alt="Логотип"
           />
-          @2024, Все права защищены
+          <div><span class="is-rcb">@2024</span>, Все права защищены</div>
         </div>
         <nav>
           <a href="">Анимация</a>

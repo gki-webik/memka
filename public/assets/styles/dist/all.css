@@ -10,3 +10,16 @@ body {
   background-color: #0A1C0C;
   font-family: "Raleway", serif;
 }
+
+.max_container {
+  max-width: 3000px;
+  margin: 0 auto;
+}
+
+.is-rc {
+  font-family: "Radio Canada", serif;
+}
+
+.is-rcb {
+  font-family: "Radio Canada Big", serif;
+}
