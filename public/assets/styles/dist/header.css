@@ -49,7 +49,7 @@ header .content nav a {
 header .content nav a:hover {
   color: #00CF0E;
 }
-@media screen and (max-width: 849px) {
+@media screen and (max-width: 922px) {
   header .content nav {
     left: -870px !important;
     -webkit-transition: left 0.15s ease-in-out;
@@ -95,7 +95,7 @@ header .content .menuToggle {
   gap: 5px;
   cursor: pointer;
 }
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 923px) {
   header .content .menuToggle {
     display: none !important;
   }

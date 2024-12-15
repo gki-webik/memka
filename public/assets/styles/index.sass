@@ -273,3 +273,89 @@
                     font-size: 0.9rem
                     &:not(.is-mem):not(.is-static)
                         bottom: -46px
+.block4
+    padding: 75px 50px
+    overflow-x: hidden
+    @media screen and (max-width: 945px)
+        padding: 75px 0px
+    h2
+        color: $color-1
+        font-size: 3rem
+        @media screen and (max-width: 945px)
+            padding: 10px 20px
+        span
+            &.is-line
+                border-bottom: 2px solid $color-1
+
+    h3
+        color: #fff
+        font-size: 1.6rem
+        line-height: 1.4
+        @media screen and (max-width: 945px)
+            padding: 0px 20px 10px 20px
+        @media screen and (max-width: 400px)
+            font-size: 1.3rem
+    .desktop
+        display: flex
+        gap: 20px
+        height: 450px
+        margin-top: 20px
+        @media screen and (max-width: 945px)
+            display: none
+        .price
+            width: 50%
+            margin-top: 50px
+            height: 400px
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+            .item
+                display: flex
+                flex-direction: column
+                gap: 10px
+                .title
+                    color: $color-1
+                    font-size: 1.3rem
+                    font-weight: 600
+                .amount
+                    color: #fff
+                    font-size: 2.5rem
+                    font-weight: 600
+        .works
+            position: relative
+            width: 50%
+            height: 450px
+            img
+                height: 300px
+                &.is-2
+                    position: absolute
+                    bottom: calc(-50% + 170px)
+                    right: 10%
+
+    .mobile
+        display: flex
+        gap: 20px
+        flex-direction: column
+        @media screen and (min-width: 946px)
+            display: none
+        .works
+            display: flex
+            flex-direction: column
+        .price
+            font-weight: 600
+            table
+                width: 100%
+                margin: 0 auto
+                color: #fff
+                padding: 20px
+                thead
+                    tr
+                        th
+                            text-align: left
+                            padding: 10px 0
+                            border-bottom: 2px solid $color-1
+                tbody
+                    td
+                        padding: 10px 0
+                    .title
+                        color: $color-1

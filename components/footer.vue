@@ -23,7 +23,7 @@
           <router-link to="#b3" class="router-link-active">{{
             updateText.a4
           }}</router-link>
-          <router-link to="/sites" class="router-link-active">{{
+          <router-link to="#b4" class="router-link-active">{{
             updateText.a5
           }}</router-link>
           <router-link to="/advertising" class="router-link-active">{{
