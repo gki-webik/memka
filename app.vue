@@ -6,7 +6,11 @@
       :lang="lang"
     ></Header>
     <NuxtPage />
-    <Footer></Footer>
+    <Footer
+      :changeLang="changeLang"
+      :getCurrentLang="getCurrentLang"
+      :lang="lang"
+    ></Footer>
   </div>
 </template>
 
