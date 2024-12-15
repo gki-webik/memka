@@ -4,12 +4,13 @@
     display: flex
     justify-content: space-between
     min-height: 800px
+    overflow-x: hidden
     .center
         display: flex
         justify-content: space-between
         align-items: center
+        padding: 0 30px
     .text
-        padding: 0 20px
         h1
             display: flex
             flex-direction: column
@@ -28,7 +29,16 @@
                     font-size: 2.3rem
                     line-height: 1.5
     .hackerImg
+        margin-right: 30px
+        position: relative
         img
-            width: 550px
-            height: 490px
-            object-fit: cover
+            &.is-1
+                width: 550px
+                height: 490px
+                object-fit: cover
+
+            &.is-2
+                position: absolute
+                left: 20px
+                top: -100px
+                width: 630px

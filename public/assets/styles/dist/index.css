@@ -7,6 +7,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 800px;
+  overflow-x: hidden;
 }
 .block1 .center {
   display: -webkit-box;
@@ -18,9 +19,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.block1 .text {
-  padding: 0 20px;
+  padding: 0 30px;
 }
 .block1 .text h1 {
   display: -webkit-box;
@@ -48,9 +47,19 @@
   font-size: 2.3rem;
   line-height: 1.5;
 }
-.block1 .hackerImg img {
+.block1 .hackerImg {
+  margin-right: 30px;
+  position: relative;
+}
+.block1 .hackerImg img.is-1 {
   width: 550px;
   height: 490px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.block1 .hackerImg img.is-2 {
+  position: absolute;
+  left: 20px;
+  top: -100px;
+  width: 630px;
 }

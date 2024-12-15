@@ -12,7 +12,8 @@
           </h1>
         </div>
         <div class="hackerImg">
-          <img src="/assets/images/1.gif" class="hackerImg" alt="" />
+          <img src="/assets/images/1.gif" class="is-1" alt="" />
+          <img src="/assets/images/2.png" class="is-2" alt="" />
         </div>
       </div>
     </div>

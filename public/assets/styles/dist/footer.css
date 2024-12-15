@@ -13,6 +13,7 @@ footer .content {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  background-color: #0A1C0C;
   height: 70px;
   color: #fff;
   -webkit-box-pack: justify;
