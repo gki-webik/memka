@@ -48,6 +48,61 @@
         </div>
       </div>
     </div>
+
+    <div class="block4" id="b4">
+      <h2><span class="is-line">Si</span>tes</h2>
+      <h3>JUST A FEW OF THE PROJECTS WE'VE WORKED WITH</h3>
+      <div class="desktop">
+        <div class="price">
+          <div class="item">
+            <div class="title">The finished website for a meme-coin</div>
+            <div class="cost"><span class="is-rcb">1500</span>$</div>
+          </div>
+          <div class="item">
+            <div class="title">Basic layout of the website</div>
+            <div class="cost"><span class="is-rcb">1000</span>$</div>
+          </div>
+          <div class="item">
+            <div class="title">Website design</div>
+            <div class="cost"><span class="is-rcb">500</span>$</div>
+          </div>
+        </div>
+        <div class="works">
+          <img src="/assets/images/23.png" class="is-1" alt="" />
+          <img src="/assets/images/24.png" class="is-2" alt="" />
+        </div>
+      </div>
+      <div class="mobile">
+        <div class="price">
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">The finished website for a meme-coin</td>
+                <td class="cost"><span class="is-rcb">1500</span>$</td>
+              </tr>
+              <tr>
+                <td class="title">Basic layout of the website</td>
+                <td class="cost"><span class="is-rcb">1000</span>$</td>
+              </tr>
+              <tr>
+                <td class="title">Website design</td>
+                <td class="cost"><span class="is-rcb">500</span>$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="works">
+          <img src="/assets/images/23.png" class="is-1" alt="" />
+          <img src="/assets/images/24.png" class="is-2" alt="" />
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 

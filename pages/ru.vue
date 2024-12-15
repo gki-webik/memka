@@ -51,6 +51,60 @@
         </div>
       </div>
     </div>
+    <div class="block4" id="b4">
+      <h2><span class="is-line">Са</span>йты</h2>
+      <h3>ПРИМЕР ПРОЕКТОВ РЕАЛИЗОВАННЫХ НАШЕЙ СТУДИЕЙ</h3>
+      <div class="desktop">
+        <div class="price">
+          <div class="item">
+            <div class="title">Готовый сайт для мем-коина</div>
+            <div class="cost"><span class="is-rcb">1500</span>$</div>
+          </div>
+          <div class="item">
+            <div class="title">Базовая верстка сайта</div>
+            <div class="cost"><span class="is-rcb">1000</span>$</div>
+          </div>
+          <div class="item">
+            <div class="title">Дизайн сайта</div>
+            <div class="cost"><span class="is-rcb">500</span>$</div>
+          </div>
+        </div>
+        <div class="works">
+          <img src="/assets/images/23.png" class="is-1" alt="" />
+          <img src="/assets/images/24.png" class="is-2" alt="" />
+        </div>
+      </div>
+      <div class="mobile">
+        <div class="price">
+          <table>
+            <thead>
+              <tr>
+                <th>Название</th>
+                <th>Стоимость</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">Готовый сайт для мем-коина</td>
+                <td class="cost"><span class="is-rcb">1500</span>$</td>
+              </tr>
+              <tr>
+                <td class="title">Базовая верстка сайта</td>
+                <td class="cost"><span class="is-rcb">1000</span>$</td>
+              </tr>
+              <tr>
+                <td class="title">Дизайн сайта</td>
+                <td class="cost"><span class="is-rcb">500</span>$</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="works">
+          <img src="/assets/images/23.png" class="is-1" alt="" />
+          <img src="/assets/images/24.png" class="is-2" alt="" />
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -174,8 +228,14 @@ export default {
       ],
     };
   },
+  props: {
+    getCurrentLang: {
+      type: Function,
+      required: true,
+    },
+  },
   mounted() {
-    localStorage.setItem("currentLang", "ru");
+    this.getCurrentLang() === "en" && this.$router.replace("/en");
   },
 };
 </script>

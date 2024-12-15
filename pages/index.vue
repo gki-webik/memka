@@ -58,15 +58,15 @@
         <div class="price">
           <div class="item">
             <div class="title">Готовый сайт для мем-коина</div>
-            <div class="amount"><span class="is-rcb">1500</span>$</div>
+            <div class="cost"><span class="is-rcb">1500</span>$</div>
           </div>
           <div class="item">
             <div class="title">Базовая верстка сайта</div>
-            <div class="amount"><span class="is-rcb">1000</span>$</div>
+            <div class="cost"><span class="is-rcb">1000</span>$</div>
           </div>
           <div class="item">
             <div class="title">Дизайн сайта</div>
-            <div class="amount"><span class="is-rcb">500</span>$</div>
+            <div class="cost"><span class="is-rcb">500</span>$</div>
           </div>
         </div>
         <div class="works">
@@ -86,15 +86,15 @@
             <tbody>
               <tr>
                 <td class="title">Готовый сайт для мем-коина</td>
-                <td class="amount"><span class="is-rcb">1500</span>$</td>
+                <td class="cost"><span class="is-rcb">1500</span>$</td>
               </tr>
               <tr>
                 <td class="title">Базовая верстка сайта</td>
-                <td class="amount"><span class="is-rcb">1000</span>$</td>
+                <td class="cost"><span class="is-rcb">1000</span>$</td>
               </tr>
               <tr>
                 <td class="title">Дизайн сайта</td>
-                <td class="amount"><span class="is-rcb">500</span>$</td>
+                <td class="cost"><span class="is-rcb">500</span>$</td>
               </tr>
             </tbody>
           </table>
