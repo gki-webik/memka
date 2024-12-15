@@ -10,35 +10,83 @@
         justify-content: space-between
         align-items: center
         padding: 0 30px
+        gap: 10px
+        width: 100%
+        @media screen and (max-width: 955px)
+            flex-direction: column-reverse
+            justify-content: center
+            align-items: center
+            gap: 40px
     .text
         h1
             display: flex
             flex-direction: column
             gap: 23px
             color: #fff
+            @media screen and (max-width: 955px)
+                text-align: center
             span
                 &.is-1
                     font-size: 4rem
                     line-height: 0.9
+                    @media screen and (max-width: 1310px)
+                        font-size: 3rem
+                    @media screen and (max-width: 1000px)
+                        font-size: 2.6rem
+                    @media screen and (max-width: 395px)
+                        font-size: 2.3rem
                 &.is-2
                     font-size: 7rem
                     color: $color-1
+                    @media screen and (max-width: 1310px)
+                        font-size: 5.5rem
+                    @media screen and (max-width: 1000px)
+                        font-size: 4rem
+                    @media screen and (max-width: 395px)
+                        font-size: 3.3rem
                 &.is-line
                     border-bottom: 2px solid $color-1
                 &.is-3
                     font-size: 2.3rem
                     line-height: 1.5
+                    @media screen and (max-width: 1310px)
+                        font-size: 2rem
+                    @media screen and (max-width: 1225px)
+                        font-size: 1.6rem
+                    @media screen and (max-width: 1000px)
+                        font-size: 1.4rem
+                    @media screen and (max-width: 395px)
+                        font-size: 1.2rem
+
     .hackerImg
         margin-right: 30px
         position: relative
+        @media screen and (max-width: 634px)
+            margin-right: 0px
         img
             &.is-1
                 width: 550px
                 height: 490px
                 object-fit: cover
-
+                @media screen and (max-width: 1210px)
+                    width: 450px
+                    height: 390px
+                @media screen and (max-width: 634px)
+                    width: 350px
+                    height: 290px
+                @media screen and (max-width: 485px)
+                    width: 300px
+                    height: 200px
             &.is-2
                 position: absolute
-                left: 20px
+                left: 0px
                 top: -100px
                 width: 630px
+                @media screen and (max-width: 1210px)
+                    width: 530px
+                @media screen and (max-width: 634px)
+                    width: 430px
+                @media screen and (max-width: 485px)
+                    width: 300px
+                    top: -70px
+                    left: 20px

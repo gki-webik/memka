@@ -20,6 +20,23 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 0 30px;
+  gap: 10px;
+  width: 100%;
+}
+@media screen and (max-width: 955px) {
+  .block1 .center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 40px;
+  }
 }
 .block1 .text h1 {
   display: -webkit-box;
@@ -32,13 +49,48 @@
   gap: 23px;
   color: #fff;
 }
+@media screen and (max-width: 955px) {
+  .block1 .text h1 {
+    text-align: center;
+  }
+}
 .block1 .text h1 span.is-1 {
   font-size: 4rem;
   line-height: 0.9;
 }
+@media screen and (max-width: 1310px) {
+  .block1 .text h1 span.is-1 {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .block1 .text h1 span.is-1 {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (max-width: 395px) {
+  .block1 .text h1 span.is-1 {
+    font-size: 2.3rem;
+  }
+}
 .block1 .text h1 span.is-2 {
   font-size: 7rem;
   color: #00CF0E;
+}
+@media screen and (max-width: 1310px) {
+  .block1 .text h1 span.is-2 {
+    font-size: 5.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .block1 .text h1 span.is-2 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 395px) {
+  .block1 .text h1 span.is-2 {
+    font-size: 3.3rem;
+  }
 }
 .block1 .text h1 span.is-line {
   border-bottom: 2px solid #00CF0E;
@@ -47,9 +99,34 @@
   font-size: 2.3rem;
   line-height: 1.5;
 }
+@media screen and (max-width: 1310px) {
+  .block1 .text h1 span.is-3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1225px) {
+  .block1 .text h1 span.is-3 {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .block1 .text h1 span.is-3 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 395px) {
+  .block1 .text h1 span.is-3 {
+    font-size: 1.2rem;
+  }
+}
 .block1 .hackerImg {
   margin-right: 30px;
   position: relative;
+}
+@media screen and (max-width: 634px) {
+  .block1 .hackerImg {
+    margin-right: 0px;
+  }
 }
 .block1 .hackerImg img.is-1 {
   width: 550px;
@@ -57,9 +134,44 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+@media screen and (max-width: 1210px) {
+  .block1 .hackerImg img.is-1 {
+    width: 450px;
+    height: 390px;
+  }
+}
+@media screen and (max-width: 634px) {
+  .block1 .hackerImg img.is-1 {
+    width: 350px;
+    height: 290px;
+  }
+}
+@media screen and (max-width: 485px) {
+  .block1 .hackerImg img.is-1 {
+    width: 300px;
+    height: 200px;
+  }
+}
 .block1 .hackerImg img.is-2 {
   position: absolute;
-  left: 20px;
+  left: 0px;
   top: -100px;
   width: 630px;
+}
+@media screen and (max-width: 1210px) {
+  .block1 .hackerImg img.is-2 {
+    width: 530px;
+  }
+}
+@media screen and (max-width: 634px) {
+  .block1 .hackerImg img.is-2 {
+    width: 430px;
+  }
+}
+@media screen and (max-width: 485px) {
+  .block1 .hackerImg img.is-2 {
+    width: 300px;
+    top: -70px;
+    left: 20px;
+  }
 }
