@@ -9,7 +9,7 @@
             alt="Логотип"
           />
         </div>
-        <nav>
+        <nav ref="nav">
           <a href="">Анимация</a>
           <a href="">Иллюстрация</a>
           <a href="">Мемы</a>
@@ -18,7 +18,7 @@
           <a href="">Реклама</a>
           <a href="">Контакты</a>
         </nav>
-        <div class="menuToggle">
+        <div class="menuToggle" @click="menuToggle($event.target)">
           <span class="is-1"></span>
           <span class="is-2"></span>
         </div>
@@ -37,6 +37,11 @@ export default {
   methods: {
     linkTo(path) {
       this.$router.push(path);
+    },
+    menuToggle(e) {
+      let nav = this.$refs.nav;
+      nav.classList.toggle("is-open");
+      e.classList.toggle("is-open");
     },
   },
 };

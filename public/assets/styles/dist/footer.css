@@ -4,6 +4,13 @@ footer {
   margin-top: 20px;
   width: 100%;
   height: 70px;
+  background-color: #0A1C0C;
+  border-top: 1px solid #103812;
+}
+@media screen and (max-width: 1010px) {
+  footer {
+    height: 100%;
+  }
 }
 footer .content {
   -webkit-box-align: center;
@@ -13,16 +20,31 @@ footer .content {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  background-color: #0A1C0C;
   height: 70px;
   color: #fff;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-top: 1px solid #103812;
   position: relative;
   z-index: 3;
   padding: 10px 20px;
+}
+@media screen and (max-width: 1010px) {
+  footer .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
+    gap: 30px;
+    padding: 50px 20px;
+  }
 }
 footer .content .logo {
   display: -webkit-box;
@@ -42,6 +64,15 @@ footer .content nav {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+}
+@media screen and (max-width: 1010px) {
+  footer .content nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
 }
 footer .content nav a {
   color: #fff;

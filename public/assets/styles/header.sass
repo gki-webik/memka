@@ -7,6 +7,7 @@ header
     height: 70px
     max-width: 3000px
     top: 0
+    z-index: 9999
     .content
         align-items: center
         display: flex
@@ -33,6 +34,22 @@ header
                 transition: color ease-in-out 0.15s
                 &:hover
                     color: $color-1
+
+            @media screen and (max-width: 849px)
+                left: -870px !important
+                transition: left 0.15s ease-in-out
+                position: fixed
+                flex-direction: column
+                top: 70px
+                backdrop-filter: blur(50px)
+                z-index: 5
+                padding: 40px 20px
+                gap: 20px
+                left: 0
+                justify-content: start
+                height: 100vh
+                &.is-open
+                    left: 0 !important
         .menuToggle
             padding: 5px
             height: 40px
@@ -45,13 +62,22 @@ header
             cursor: pointer
             @media screen and (min-width: 850px)
                 display: none !important
+            &.is-open
+                span
+                    &.is-1
+                        width: 20px
+                        margin-left: 15px
+                    &.is-2
+                        width: 35px
+                        margin-left: 0px
             span
                 display: block
                 height: 2px
                 background-color: #fff
-                transition: background-color ease-in-out 0.15s
+                transition: background-color ease-in-out 0.15s, width ease-in-out 0.15s, margin-left ease-in-out 0.15s
                 &.is-1
                     width: 35px
+                    margin-left: 0px
                 &.is-2
                     width: 20px
                     margin-left: 15px
@@ -61,7 +87,8 @@ header
     .is-blur
         width: 100%
         height: 70px
-        backdrop-filter: blur(7px)
+        backdrop-filter: blur(50px)
+        background-color: #0b1d0d5e
         position: absolute
         top: 0
         right: 0
