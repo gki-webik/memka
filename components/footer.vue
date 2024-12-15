@@ -40,10 +40,6 @@
             {{ updateText.a8 }}
           </router-link>
         </nav>
-        <div class="menuToggle" @click="menuToggle">
-          <span class="is-1"></span>
-          <span class="is-2"></span>
-        </div>
       </div>
       <div class="is-blur"></div>
     </footer>
