@@ -154,6 +154,8 @@
     h2
         color: $color-1
         font-size: 3rem
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
         span
             &.is-line
                 border-bottom: 2px solid $color-1
@@ -192,6 +194,8 @@
     h2
         color: $color-1
         font-size: 3rem
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
         span
             &.is-line
                 border-bottom: 2px solid $color-1
@@ -282,6 +286,8 @@
     h2
         color: $color-1
         font-size: 3rem
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
         @media screen and (max-width: 945px)
             padding: 10px 20px
         span
@@ -370,6 +376,8 @@
     h2
         color: $color-1
         font-size: 3rem
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
         span
             &.is-line
                 border-bottom: 2px solid $color-1
@@ -480,6 +488,8 @@
     h2
         color: $color-1
         font-size: 3rem
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
         @media screen  and (max-width: 655px)
             padding: 10px 20px
         span
@@ -601,3 +611,71 @@
                     width: 100px
                     img
                         width: 100px
+.block8
+    padding: 75px 50px
+    overflow: hidden
+    @media screen  and (max-width: 655px)
+        padding: 75px 0px 20px 0
+    h2
+        color: $color-1
+        font-size: 3rem
+        @media screen  and (max-width: 655px)
+            padding: 10px 20px
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
+
+        span
+            &.is-line
+                border-bottom: 2px solid $color-1
+    .items
+        display: flex
+        justify-content: space-around
+        align-items: center
+        gap: 50px
+        flex-wrap: wrap
+        @media screen and (max-width: 610px)
+            justify-content: center
+
+        .item
+            display: flex
+            flex-direction: column
+            gap: 20px
+            img
+                width: 400px
+                @media screen and (max-width: 1372px)
+                    width: 350px
+                @media screen and (max-width: 1255px)
+                    width: 300px
+                @media screen and (max-width: 1110px)
+                    width: 400px
+                @media screen and (max-width: 965px)
+                    width: 300px
+                @media screen and (max-width: 765px)
+                    width: 270px
+                @media screen and (max-width: 702px)
+                    width: 230px
+                @media screen and (max-width: 610px)
+                    width: 200px
+                @media screen and (max-width: 490px)
+                    width: 150px
+                @media screen and (max-width: 396px)
+                    width: 130px
+            .description
+                display: flex
+                flex-direction: column
+                .title
+                    color: $color-1
+                    font-size: 1.3rem
+                    font-weight: 600
+                    position: relative
+                    z-index: 5
+                    @media screen and (max-width: 490px)
+                        font-size: 1rem
+                .cost
+                    color: #fff
+                    font-size: 2.5rem
+                    font-weight: 600
+                    position: relative
+                    z-index: 5
+                    @media screen and (max-width: 490px)
+                        font-size: 1.7rem

@@ -219,7 +219,11 @@
               />
             </div>
           </div>
-          <div class="description" v-if="!isPlaying1" @click="togglePlay2('video4')">
+          <div
+            class="description"
+            v-if="!isPlaying1"
+            @click="togglePlay2('video4')"
+          >
             <div class="title">
               <span class="is-rcb">3</span>D анимация (<span class="is-rcb"
                 >15</span
@@ -249,6 +253,39 @@
             class="play-button"
             alt=""
           />
+        </div>
+      </div>
+    </div>
+    <div class="block8" id="b8">
+      <h2><span class="is-line">Ил</span>люстрации</h2>
+      <div class="items">
+        <div class="item">
+          <img src="/assets/images/40.png" alt="" />
+          <div class="description">
+            <div class="title">Котик на деньгах</div>
+            <div class="cost"><span class="is-rcb">100</span>$</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/assets/images/40.png" alt="" />
+          <div class="description">
+            <div class="title">Котик на деньгах</div>
+            <div class="cost"><span class="is-rcb">100</span>$</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/assets/images/40.png" alt="" />
+          <div class="description">
+            <div class="title">Котик на деньгах</div>
+            <div class="cost"><span class="is-rcb">100</span>$</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/assets/images/40.png" alt="" />
+          <div class="description">
+            <div class="title">Котик на деньгах</div>
+            <div class="cost"><span class="is-rcb">100</span>$</div>
+          </div>
         </div>
       </div>
     </div>

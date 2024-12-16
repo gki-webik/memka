@@ -254,6 +254,39 @@
         </div>
       </div>
     </div>
+    <div class="block8" id="b8">
+      <h2><span class="is-line">Il</span>lustration</h2>
+      <div class="items">
+        <div class="item">
+          <img src="/assets/images/40.png" alt="" />
+          <div class="description">
+            <div class="title">A cat on the money</div>
+            <div class="cost"><span class="is-rcb">100</span>$</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/assets/images/40.png" alt="" />
+          <div class="description">
+            <div class="title">A cat on the money</div>
+            <div class="cost"><span class="is-rcb">100</span>$</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/assets/images/40.png" alt="" />
+          <div class="description">
+            <div class="title">A cat on the money</div>
+            <div class="cost"><span class="is-rcb">100</span>$</div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/assets/images/40.png" alt="" />
+          <div class="description">
+            <div class="title">A cat on the money</div>
+            <div class="cost"><span class="is-rcb">100</span>$</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 

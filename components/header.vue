@@ -13,7 +13,7 @@
           <router-link to="#b5" class="router-link-active">{{
             updateText.a1
           }}</router-link>
-          <router-link to="/illustration" class="router-link-active">{{
+          <router-link to="#b8" class="router-link-active">{{
             updateText.a2
           }}</router-link>
           <router-link to="#b2" class="router-link-active">{{
