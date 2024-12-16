@@ -386,6 +386,8 @@
         align-items: center
         flex-wrap: wrap
         gap: 100px
+        &.is-2
+            margin-top: 100px
         @media screen and (max-width: 592px)
             gap: 30px
         .item
@@ -399,6 +401,8 @@
                 @media screen and (max-width: 592px)
                     width: 115px
                 img
+                    user-select: none
+                    pointer-events: none
                     &.is-1
                         width: 370px
                         position: relative
@@ -418,6 +422,39 @@
                         @media screen and (max-width: 592px)
                             height: 184px
                             left: -106px
+                            top: 22px
+                & .cp
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    cursor: pointer
+                    width: 200px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    z-index: 15
+                    img
+                        width: 200px
+                    @media screen and (max-width: 970px)
+                        width: 100px
+                        img
+                            width: 100px
+                video
+                    user-select: none
+                    user-select: none
+                    &.is-2
+                        position: absolute
+                        left: 9px
+                        top: 50px
+                        height: 610px
+                        @media screen and (max-width: 970px)
+                            height: 304px
+                            top: 42px
+                            left: 9px
+                        @media screen and (max-width: 592px)
+                            height: 184px
+                            left: 6px
                             top: 22px
             img
                 user-select: none

@@ -56,22 +56,17 @@
       <h3>ПРИМЕР ПРОЕКТОВ РЕАЛИЗОВАННЫХ НАШЕЙ СТУДИЕЙ</h3>
       <div class="desktop">
         <div class="price">
-          <div class="item">
-            <div class="title">Готовый сайт для мем-коина</div>
-            <div class="cost"><span class="is-rcb">1500</span>$</div>
-          </div>
-          <div class="item">
-            <div class="title">Базовая верстка сайта</div>
-            <div class="cost"><span class="is-rcb">1000</span>$</div>
-          </div>
-          <div class="item">
-            <div class="title">Дизайн сайта</div>
-            <div class="cost"><span class="is-rcb">500</span>$</div>
+          <div class="item" v-for="(site, index) in sites" :key="index">
+            <div class="title">{{ site.title }}</div>
+            <div class="cost">
+              <span class="is-rcb">{{ site.cost }}</span
+              >$
+            </div>
           </div>
         </div>
         <div class="works">
-          <img src="/assets/images/23.png" class="is-1" alt="" />
-          <img src="/assets/images/24.png" class="is-2" alt="" />
+          <img src="/assets/images/23.png" loading="lazy" class="is-1" alt="" />
+          <img src="/assets/images/24.png" loading="lazy" class="is-2" alt="" />
         </div>
       </div>
       <div class="mobile">
@@ -84,24 +79,19 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td class="title">Готовый сайт для мем-коина</td>
-                <td class="cost"><span class="is-rcb">1500</span>$</td>
-              </tr>
-              <tr>
-                <td class="title">Базовая верстка сайта</td>
-                <td class="cost"><span class="is-rcb">1000</span>$</td>
-              </tr>
-              <tr>
-                <td class="title">Дизайн сайта</td>
-                <td class="cost"><span class="is-rcb">500</span>$</td>
+              <tr v-for="(site, index) in sites" :key="index">
+                <td class="title">{{ site.title }}</td>
+                <td class="cost">
+                  <span class="is-rcb">{{ site.cost }}</span
+                  >$
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
         <div class="works">
-          <img src="/assets/images/23.png" class="is-1" alt="" />
-          <img src="/assets/images/24.png" class="is-2" alt="" />
+          <img src="/assets/images/23.png" loading="lazy" class="is-1" alt="" />
+          <img src="/assets/images/24.png" loading="lazy" class="is-2" alt="" />
         </div>
       </div>
     </div>
@@ -113,24 +103,83 @@
       <div class="items">
         <div class="item">
           <div class="phone">
-            <img src="/assets/images/25.png" class="is-1" alt="" />
-            <img src="/assets/images/29.gif" class="is-2" alt="" />
+            <img
+              src="/assets/images/25.png"
+              loading="lazy"
+              class="is-1"
+              alt=""
+            />
+            <img
+              src="/assets/images/29.gif"
+              loading="lazy"
+              class="is-2"
+              alt=""
+            />
           </div>
-          <img src="/assets/images/26.png" class="is-3" alt="" />
+          <img src="/assets/images/26.png" loading="lazy" class="is-3" alt="" />
         </div>
         <div class="item">
           <div class="phone">
-            <img src="/assets/images/25.png" class="is-1" alt="" />
-            <img src="/assets/images/30.gif" class="is-2" alt="" />
+            <img
+              src="/assets/images/25.png"
+              loading="lazy"
+              class="is-1"
+              alt=""
+            />
+            <img
+              src="/assets/images/30.gif"
+              loading="lazy"
+              class="is-2"
+              alt=""
+            />
           </div>
-          <img src="/assets/images/27.png" class="is-3" alt="" />
+          <img src="/assets/images/27.png" loading="lazy" class="is-3" alt="" />
         </div>
         <div class="item">
           <div class="phone">
-            <img src="/assets/images/25.png" class="is-1" alt="" />
-            <img src="/assets/images/31.gif" class="is-2" alt="" />
+            <img
+              src="/assets/images/25.png"
+              loading="lazy"
+              class="is-1"
+              alt=""
+            />
+            <img
+              src="/assets/images/31.gif"
+              loading="lazy"
+              class="is-2"
+              alt=""
+            />
           </div>
-          <img src="/assets/images/28.png" class="is-3" alt="" />
+          <img src="/assets/images/28.png" loading="lazy" class="is-3" alt="" />
+        </div>
+      </div>
+      <div class="items is-2">
+        <div class="item" v-for="(video, index) in videos" :key="index">
+          <div class="phone">
+            <img
+              src="/assets/images/25.png"
+              loading="lazy"
+              class="is-1"
+              @click="togglePlay(index)"
+              alt=""
+            />
+            <video
+              :ref="`video${index}`"
+              class="is-2"
+              :src="video.src"
+              @click="togglePlay(index)"
+              @ended="onVideoEnd(index)"
+            ></video>
+            <div class="cp" @click="togglePlay(index)">
+              <img
+                src="/assets/images/36.svg"
+                loading="lazy"
+                v-if="!video.isPlaying"
+                class="play-button"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -255,6 +304,16 @@ export default {
           title: "Статичный стикер",
         },
       ],
+      sites: [
+        { title: "Готовый сайт для мем-коина", cost: 1500 },
+        { title: "Базовая верстка сайта", cost: 1000 },
+        { title: "Дизайн сайта", cost: 500 },
+      ],
+      videos: [
+        { ref: "video1", src: "/assets/images/33.mp4", isPlaying: false },
+        { ref: "video2", src: "/assets/images/34.mp4", isPlaying: false },
+        { ref: "video3", src: "/assets/images/35.mp4", isPlaying: false },
+      ],
     };
   },
   props: {
@@ -263,8 +322,40 @@ export default {
       required: true,
     },
   },
+  methods: {
+    togglePlay(index) {
+      const videoRef = `video${index}`;
+      const video = this.$refs[videoRef][0];
+      if (video) {
+        const videoData = this.videos[index];
+        if (video.paused) {
+          video.play();
+          videoData.isPlaying = true;
+        } else {
+          video.pause();
+          videoData.isPlaying = false;
+        }
+      } else {
+        console.error(`Video element with ref ${videoRef} not found.`);
+      }
+    },
+    onVideoEnd(index) {
+      const videoData = this.videos[index];
+      if (videoData) {
+        videoData.isPlaying = false;
+      }
+    },
+    onVideoEnd(videoRef) {
+      const videoData = this.videos.find((v) => v.ref === videoRef);
+      if (videoData) {
+        videoData.isPlaying = false;
+      }
+    },
+  },
   mounted() {
-    this.getCurrentLang() === "en" && this.$router.replace("/en");
+    if (this.getCurrentLang() === "en") {
+      this.$router.replace("/en");
+    }
   },
 };
 </script>
