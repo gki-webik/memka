@@ -67,7 +67,7 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: "apple-touch-icon",
-          href: "/assets/images/browserLogo.png",
+          href: "/assets/images/logo.png",
         },
         { rel: "canonical", href: "https://thememeprotocol.com" },
       ],
@@ -94,7 +94,7 @@ export default defineNuxtConfig({
           innerHTML: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            url: "https://thememeprotocol.ru",
+            url: "https://thememeprotocol.com",
             name: "The Meme Protocol",
           }),
         },
