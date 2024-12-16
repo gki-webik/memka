@@ -10,7 +10,7 @@
           />
         </div>
         <nav ref="nav">
-          <router-link to="/" class="router-link-active">{{
+          <router-link to="#b5" class="router-link-active">{{
             updateText.a1
           }}</router-link>
           <router-link to="/illustration" class="router-link-active">{{

@@ -105,6 +105,35 @@
         </div>
       </div>
     </div>
+    <div class="block5" id="b5">
+      <h2>
+        <span class="is-line"><span class="is-rcb">2</span>D</span> Сайты
+      </h2>
+      <h3>РАЗРАБОТКА ПЕРСОНАЖА В <span class="is-rcb">2</span>D И АНИМАЦИЯ</h3>
+      <div class="items">
+        <div class="item">
+          <div class="phone">
+            <img src="/assets/images/25.png" class="is-1" alt="" />
+            <img src="/assets/images/29.gif" class="is-2" alt="" />
+          </div>
+          <img src="/assets/images/26.png" class="is-3" alt="" />
+        </div>
+        <div class="item">
+          <div class="phone">
+            <img src="/assets/images/25.png" class="is-1" alt="" />
+            <img src="/assets/images/30.gif" class="is-2" alt="" />
+          </div>
+          <img src="/assets/images/27.png" class="is-3" alt="" />
+        </div>
+        <div class="item">
+          <div class="phone">
+            <img src="/assets/images/25.png" class="is-1" alt="" />
+            <img src="/assets/images/31.gif" class="is-2" alt="" />
+          </div>
+          <img src="/assets/images/28.png" class="is-3" alt="" />
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 

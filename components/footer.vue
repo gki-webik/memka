@@ -11,7 +11,7 @@
           <div><span class="is-rcb">@2024</span>, Все права защищены</div>
         </div>
         <nav ref="nav">
-          <router-link to="/" class="router-link-active">{{
+          <router-link to="#b5" class="router-link-active">{{
             updateText.a1
           }}</router-link>
           <router-link to="/illustration" class="router-link-active">{{

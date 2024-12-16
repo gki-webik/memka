@@ -359,3 +359,76 @@
                         padding: 10px 0
                     .title
                         color: $color-1
+.block5
+    padding: 75px 50px
+    overflow: hidden
+    @media screen  and (max-width: 400px)
+        padding: 75px 20px
+    h2
+        color: $color-1
+        font-size: 3rem
+        span
+            &.is-line
+                border-bottom: 2px solid $color-1
+
+    h3
+        color: #fff
+        font-size: 1.6rem
+        line-height: 1.4
+        @media screen and (max-width: 400px)
+            font-size: 1.3rem
+
+    .items
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        gap: 100px
+        @media screen and (max-width: 592px)
+            gap: 20px
+        .item
+            position: relative
+            .phone
+                width: 370px
+                position: relative
+                overflow: hidden
+                @media screen and (max-width: 970px)
+                    width: 190px
+                @media screen and (max-width: 592px)
+                    width: 115px
+                img
+                    &.is-1
+                        width: 370px
+                        position: relative
+                        z-index: 5
+                        @media screen and (max-width: 970px)
+                            width: 190px
+                        @media screen and (max-width: 592px)
+                            width: 115px
+                    &.is-2
+                        position: absolute
+                        left: -330px
+                        top: 40px
+                        height: 580px
+                        @media screen and (max-width: 970px)
+                            height: 305px
+                            left: -177px
+                        @media screen and (max-width: 592px)
+                            height: 184px
+                            left: -106px
+                            top: 22px
+            img
+                user-select: none
+                pointer-events: none
+                &.is-3
+                    position: absolute
+                    left: -100px
+                    bottom: -50px
+                    z-index: 10
+                    @media screen and (max-width: 970px)
+                        height: 200px
+                        left: -70px
+                    @media screen and (max-width: 592px)
+                        height: 112px
+                        left: -27px
+                        bottom: -20px

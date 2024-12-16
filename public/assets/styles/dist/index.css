@@ -643,3 +643,127 @@
 .block4 .mobile .price table tbody .title {
   color: #00CF0E;
 }
+
+.block5 {
+  padding: 75px 50px;
+  overflow: hidden;
+}
+@media screen and (max-width: 400px) {
+  .block5 {
+    padding: 75px 20px;
+  }
+}
+.block5 h2 {
+  color: #00CF0E;
+  font-size: 3rem;
+}
+.block5 h2 span.is-line {
+  border-bottom: 2px solid #00CF0E;
+}
+.block5 h3 {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+@media screen and (max-width: 400px) {
+  .block5 h3 {
+    font-size: 1.3rem;
+  }
+}
+.block5 .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 100px;
+}
+@media screen and (max-width: 592px) {
+  .block5 .items {
+    gap: 20px;
+  }
+}
+.block5 .items .item {
+  position: relative;
+}
+.block5 .items .item .phone {
+  width: 370px;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 970px) {
+  .block5 .items .item .phone {
+    width: 190px;
+  }
+}
+@media screen and (max-width: 592px) {
+  .block5 .items .item .phone {
+    width: 115px;
+  }
+}
+.block5 .items .item .phone img.is-1 {
+  width: 370px;
+  position: relative;
+  z-index: 5;
+}
+@media screen and (max-width: 970px) {
+  .block5 .items .item .phone img.is-1 {
+    width: 190px;
+  }
+}
+@media screen and (max-width: 592px) {
+  .block5 .items .item .phone img.is-1 {
+    width: 115px;
+  }
+}
+.block5 .items .item .phone img.is-2 {
+  position: absolute;
+  left: -330px;
+  top: 40px;
+  height: 580px;
+}
+@media screen and (max-width: 970px) {
+  .block5 .items .item .phone img.is-2 {
+    height: 305px;
+    left: -177px;
+  }
+}
+@media screen and (max-width: 592px) {
+  .block5 .items .item .phone img.is-2 {
+    height: 184px;
+    left: -106px;
+    top: 22px;
+  }
+}
+.block5 .items .item img {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+.block5 .items .item img.is-3 {
+  position: absolute;
+  left: -100px;
+  bottom: -50px;
+  z-index: 10;
+}
+@media screen and (max-width: 970px) {
+  .block5 .items .item img.is-3 {
+    height: 200px;
+    left: -70px;
+  }
+}
+@media screen and (max-width: 592px) {
+  .block5 .items .item img.is-3 {
+    height: 112px;
+    left: -27px;
+    bottom: -20px;
+  }
+}
