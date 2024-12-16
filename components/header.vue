@@ -10,27 +10,48 @@
           />
         </div>
         <nav ref="nav">
-          <router-link to="#b5" class="router-link-active">{{
-            updateText.a1
-          }}</router-link>
-          <router-link to="#b8" class="router-link-active">{{
-            updateText.a2
-          }}</router-link>
-          <router-link to="#b2" class="router-link-active">{{
-            updateText.a3
-          }}</router-link>
-          <router-link to="#b3" class="router-link-active">{{
-            updateText.a4
-          }}</router-link>
-          <router-link to="#b4" class="router-link-active">{{
-            updateText.a5
-          }}</router-link>
-          <router-link to="#b9" class="router-link-active">{{
-            updateText.a6
-          }}</router-link>
-          <router-link to="#b10" class="router-link-active">{{
-            updateText.a7
-          }}</router-link>
+          <router-link
+            to="#b5"
+            @click="menuToggle"
+            class="router-link-active"
+            >{{ updateText.a1 }}</router-link
+          >
+          <router-link
+            to="#b8"
+            @click="menuToggle"
+            class="router-link-active"
+            >{{ updateText.a2 }}</router-link
+          >
+          <router-link
+            to="#b2"
+            @click="menuToggle"
+            class="router-link-active"
+            >{{ updateText.a3 }}</router-link
+          >
+          <router-link
+            to="#b3"
+            @click="menuToggle"
+            class="router-link-active"
+            >{{ updateText.a4 }}</router-link
+          >
+          <router-link
+            to="#b4"
+            @click="menuToggle"
+            class="router-link-active"
+            >{{ updateText.a5 }}</router-link
+          >
+          <router-link
+            to="#b9"
+            @click="menuToggle"
+            class="router-link-active"
+            >{{ updateText.a6 }}</router-link
+          >
+          <router-link
+            to="#b10"
+            @click="menuToggle"
+            class="router-link-active"
+            >{{ updateText.a7 }}</router-link
+          >
           <router-link
             :to="getCurrentLang() === 'ru' ? '/en' : '/ru'"
             @click="changeLang"
