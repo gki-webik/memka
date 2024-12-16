@@ -287,6 +287,67 @@
         </div>
       </div>
     </div>
+    <div class="block9" id="b9">
+      <h2><span class="is-line">Se</span>tup campaign</h2>
+      <h3>SETUP AND MANAGEMENT OF AD CAMPAIGNS</h3>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>description</th>
+              <th>Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(ad, index) in ads" :key="index">
+              <td class="title">{{ ad.title }}</td>
+              <td class="description">{{ ad.description }}</td>
+              <td class="cost">
+                <span class="is-rcb">{{ ad.cost }}$ / month</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="block10" id="b10">
+      <h2><span class="is-line">OU</span>R CONTACTS</h2>
+      <div class="content">
+        <div class="left">
+          <img src="/assets/images/41.png" class="is-1" loading="lazy" alt="" />
+          <div class="tg">
+            <img
+              src="/assets/images/42.png"
+              class="is-2"
+              loading="lazy"
+              alt=""
+            />
+            <a href="https://t.me/thememeprotocol">@thememeprotocol</a>
+            <div class="bg"></div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="top">
+            <img
+              src="/assets/images/43.png"
+              loading="lazy"
+              class="is-1"
+              alt=""
+            />
+            <img
+              src="/assets/images/44.png"
+              loading="lazy"
+              class="is-2"
+              alt=""
+            />
+          </div>
+          <div class="bottom">
+            CONTACT THE LEADING WEB3 MARKETING AGENCY FOR CONTENT THAT WINS
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -406,6 +467,39 @@ export default {
           class: "is-22",
           titleClass: "title is-static",
           title: "Static Stickers",
+        },
+      ],
+      ads: [
+        {
+          title: "Instagram Direct",
+          description: "Mass messaging to engage clients or promote services",
+          cost: 1000,
+        },
+        {
+          title: "Telegram Messaging",
+          description:
+            "Bulk messages to connect with your audience effectively",
+          cost: 1000,
+        },
+        {
+          title: "Facebook Ads",
+          description: "Setup and management of ad campaigns, any niches",
+          cost: 1000,
+        },
+        {
+          title: "Google Ads",
+          description: "Contextual and banner ads, any niches",
+          cost: 1000,
+        },
+        {
+          title: "Yandex Direct",
+          description: "Ads for white and gray niches ",
+          cost: 1000,
+        },
+        {
+          title: "Twitter Ads",
+          description: "Ads for white and gray niches, tailored strategies ",
+          cost: 1500,
         },
       ],
       sites: [

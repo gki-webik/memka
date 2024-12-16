@@ -26,10 +26,10 @@
           <router-link to="#b4" class="router-link-active">{{
             updateText.a5
           }}</router-link>
-          <router-link to="/advertising" class="router-link-active">{{
+          <router-link to="#b9" class="router-link-active">{{
             updateText.a6
           }}</router-link>
-          <router-link to="/contacts" class="router-link-active">{{
+          <router-link to="#b10" class="router-link-active">{{
             updateText.a7
           }}</router-link>
           <router-link

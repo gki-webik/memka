@@ -289,6 +289,68 @@
         </div>
       </div>
     </div>
+    <div class="block9" id="b9">
+      <h2><span class="is-line">Ре</span>клама</h2>
+      <h3>НАСТРОЙКА РЕКЛАМНЫХ КОМПАНИЙ</h3>
+      <div class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>Название</th>
+              <th>Описание</th>
+              <th>Стоимость</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr v-for="(ad, index) in ads" :key="index">
+              <td class="title">{{ ad.title }}</td>
+              <td class="description">{{ ad.description }}</td>
+              <td class="cost">
+                <span class="is-rcb">{{ ad.cost }}$ / month</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="block10" id="b10">
+      <h2><span class="is-line">Ко</span>нтакты</h2>
+      <div class="content">
+        <div class="left">
+          <img src="/assets/images/41.png" class="is-1" loading="lazy" alt="" />
+          <div class="tg">
+            <img
+              src="/assets/images/42.png"
+              class="is-2"
+              loading="lazy"
+              alt=""
+            />
+            <a href="https://t.me/thememeprotocol">@thememeprotocol</a>
+            <div class="bg"></div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="top">
+            <img
+              src="/assets/images/43.png"
+              loading="lazy"
+              class="is-1"
+              alt=""
+            />
+            <img
+              src="/assets/images/44.png"
+              loading="lazy"
+              class="is-2"
+              alt=""
+            />
+          </div>
+          <div class="bottom">
+            СВЯЖИТЕСЬ С НАМИ, ЧТОБЫ ПОЛУЧИТЬ КОНТЕНТ, КОТОРЫЙ ПРИНЕСЕТ ВАМ
+            ИЗВЕСТНОСТЬ И ПРИБЫЛЬ
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
@@ -419,6 +481,42 @@ export default {
         { ref: "video1", src: "/assets/images/33.mp4", isPlaying: false },
         { ref: "video2", src: "/assets/images/34.mp4", isPlaying: false },
         { ref: "video3", src: "/assets/images/35.mp4", isPlaying: false },
+      ],
+      ads: [
+        {
+          title: "Instagram Direct",
+          description:
+            "Массовые рассылки для привлечения клиентов или продвижения услуг",
+          cost: 1000,
+        },
+        {
+          title: "Telegram Messaging",
+          description:
+            "Рассылка массовых сообщений для эффективного взаимодействия с вашей аудиторией",
+          cost: 1000,
+        },
+        {
+          title: "Facebook Ads",
+          description:
+            "Настройка и управление рекламными кампаниями в любых нишах",
+          cost: 1000,
+        },
+        {
+          title: "Google Ads",
+          description: "Контекстная и баннерная реклама в любых нишах",
+          cost: 1000,
+        },
+        {
+          title: "Yandex Direct",
+          description: "Реклама для белых и серых ниш",
+          cost: 1000,
+        },
+        {
+          title: "Twitter Ads",
+          description:
+            "Реклама для белых и серых ниш, индивидуальные стратегии",
+          cost: 1500,
+        },
       ],
       isPlaying1: false,
       isPlaying2: false,
