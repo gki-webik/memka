@@ -217,7 +217,11 @@
               />
             </div>
           </div>
-          <div class="description" @click="togglePlay2('video4')">
+          <div
+            class="description"
+            v-if="!isPlaying1"
+            @click="togglePlay2('video4')"
+          >
             <div class="title">
               <span class="is-rcb">3</span>D animation (<span class="is-rcb"
                 >15</span
