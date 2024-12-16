@@ -267,6 +267,113 @@
   }
 }
 
+.block11 {
+  padding: 75px 50px;
+}
+@media screen and (max-width: 400px) {
+  .block11 {
+    padding: 75px 20px;
+  }
+}
+.block11 h2 {
+  color: #00CF0E;
+  font-size: 3rem;
+}
+@media screen and (max-width: 425px) {
+  .block11 h2 {
+    font-size: 2.5rem;
+  }
+}
+.block11 h2 span.is-line {
+  border-bottom: 2px solid #00CF0E;
+}
+.block11 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 885px) {
+  .block11 .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.block11 .content img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media screen and (max-width: 1193px) {
+  .block11 .content img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 978px) {
+  .block11 .content img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 520px) {
+  .block11 .content img {
+    display: none;
+  }
+}
+.block11 .content .text {
+  line-height: 1.6;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 1373px) {
+  .block11 .content .text {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1105px) {
+  .block11 .content .text {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 978px) {
+  .block11 .content .text {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 885px) {
+  .block11 .content .text {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 520px) {
+  .block11 .content .text {
+    font-size: 1.1rem;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 430px) {
+  .block11 .content .text {
+    font-size: 1rem;
+  }
+}
+
 .block2 {
   padding: 75px 50px;
 }

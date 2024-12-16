@@ -10,13 +10,31 @@
             </span>
             <span class="is-3"> AMONGST DEGENS AND RETAIL INVESTORS </span>
           </h1>
-          <a href="#b2" class="lets_go">
+          <a href="#b11" class="lets_go">
             <span class="is-1"></span>LETS GO <span class="is-2"></span>
           </a>
         </div>
         <div class="hackerImg">
-          <img src="/assets/images/1.gif" class="is-1" alt="" />
-          <img src="/assets/images/2.png" class="is-2" alt="" />
+          <img src="/assets/images/1.gif" class="is-1" alt="Хакер" />
+          <img src="/assets/images/2.png" class="is-2" alt="Треугольник" />
+        </div>
+      </div>
+    </div>
+    <div class="block11" id="b11">
+      <h2><span class="is-line">Ab</span>out us</h2>
+      <div class="content">
+        <img src="/assets/images/45.png" alt="Хакер" />
+        <div class="text">
+          <div>
+            We are a creative agency specializing in custom animations, sticker
+            design, and character development in both
+            <span class="is-rcb">2</span>D and <span class="is-rcb">3</span>D
+            formats. Our team delivers high-quality visual content tailored for
+            brands, social media platforms, and community engagement. We help
+            businesses stand out with unique designs, animated assets, and
+            promotional visuals that boost audience interaction and enhance
+            brand identity.
+          </div>
         </div>
       </div>
     </div>
@@ -25,7 +43,7 @@
       <div class="items">
         <div class="item is-1">
           <div class="text">STAND OUT FROM THE CROWD</div>
-          <img src="/assets/images/3.png" alt="" loading="lazy" />
+          <img src="/assets/images/3.png" alt="Мем" loading="lazy" />
         </div>
         <div class="item is-2">
           <div class="text is-right">
@@ -33,7 +51,7 @@
             <br />
             GROWTH
           </div>
-          <img src="/assets/images/4.gif" alt="" loading="lazy" />
+          <img src="/assets/images/4.gif" alt="Мем" loading="lazy" />
         </div>
       </div>
     </div>
@@ -42,7 +60,12 @@
       <h3>JUST A FEW OF THE PROJECTS WE'VE WORKED WITH</h3>
       <div class="items">
         <div v-for="(item, index) in block3Items" :key="index" class="item">
-          <img :src="item.src" :class="item.class" alt="" loading="lazy" />
+          <img
+            :src="item.src"
+            :class="item.class"
+            :alt="'Мем_' + index"
+            loading="lazy"
+          />
           <div :class="item.titleClass">
             <span>{{ item.title }}</span>
           </div>
@@ -63,8 +86,18 @@
           </div>
         </div>
         <div class="works">
-          <img src="/assets/images/23.png" loading="lazy" class="is-1" alt="" />
-          <img src="/assets/images/24.png" loading="lazy" class="is-2" alt="" />
+          <img
+            src="/assets/images/23.png"
+            loading="lazy"
+            class="is-1"
+            alt="Мем"
+          />
+          <img
+            src="/assets/images/24.png"
+            loading="lazy"
+            class="is-2"
+            alt="Мем"
+          />
         </div>
       </div>
       <div class="mobile">
@@ -88,8 +121,18 @@
           </table>
         </div>
         <div class="works">
-          <img src="/assets/images/23.png" loading="lazy" class="is-1" alt="" />
-          <img src="/assets/images/24.png" loading="lazy" class="is-2" alt="" />
+          <img
+            src="/assets/images/23.png"
+            loading="lazy"
+            class="is-1"
+            alt="Сайт1"
+          />
+          <img
+            src="/assets/images/24.png"
+            loading="lazy"
+            class="is-2"
+            alt="Сайт2"
+          />
         </div>
       </div>
     </div>
@@ -105,16 +148,21 @@
               src="/assets/images/25.png"
               loading="lazy"
               class="is-1"
-              alt=""
+              alt="Телефон"
             />
             <img
               src="/assets/images/29.gif"
               loading="lazy"
               class="is-2"
-              alt=""
+              alt="Мем"
             />
           </div>
-          <img src="/assets/images/26.png" loading="lazy" class="is-3" alt="" />
+          <img
+            src="/assets/images/26.png"
+            loading="lazy"
+            class="is-3"
+            alt="Персонаж"
+          />
         </div>
         <div class="item">
           <div class="phone">
@@ -122,16 +170,21 @@
               src="/assets/images/25.png"
               loading="lazy"
               class="is-1"
-              alt=""
+              alt="Телефон"
             />
             <img
               src="/assets/images/30.gif"
               loading="lazy"
               class="is-2"
-              alt=""
+              alt="Мем"
             />
           </div>
-          <img src="/assets/images/27.png" loading="lazy" class="is-3" alt="" />
+          <img
+            src="/assets/images/27.png"
+            loading="lazy"
+            class="is-3"
+            alt="Персонаж"
+          />
         </div>
         <div class="item">
           <div class="phone">
@@ -139,16 +192,21 @@
               src="/assets/images/25.png"
               loading="lazy"
               class="is-1"
-              alt=""
+              alt="Телефон"
             />
             <img
               src="/assets/images/31.gif"
               loading="lazy"
               class="is-2"
-              alt=""
+              alt="Мем"
             />
           </div>
-          <img src="/assets/images/28.png" loading="lazy" class="is-3" alt="" />
+          <img
+            src="/assets/images/28.png"
+            loading="lazy"
+            class="is-3"
+            alt="Персонаж"
+          />
         </div>
       </div>
       <div class="items is-2">
@@ -159,7 +217,7 @@
               loading="lazy"
               class="is-1"
               @click="togglePlay(index)"
-              alt=""
+              alt="Телефон"
             />
             <video
               :ref="`video${index}`"
@@ -174,7 +232,7 @@
                 loading="lazy"
                 v-if="!video.isPlaying"
                 class="play-button"
-                alt=""
+                alt="Кнопка"
               />
             </div>
           </div>
@@ -213,7 +271,7 @@
                 loading="lazy"
                 v-if="!isPlaying1"
                 class="play-button"
-                alt=""
+                alt="Кнопка"
               />
             </div>
           </div>
@@ -249,7 +307,7 @@
             loading="lazy"
             v-if="!isPlaying2"
             class="play-button"
-            alt=""
+            alt="Кнопка"
           />
         </div>
       </div>
@@ -258,28 +316,28 @@
       <h2><span class="is-line">Il</span>lustration</h2>
       <div class="items">
         <div class="item">
-          <img src="/assets/images/40.png" alt="" />
+          <img src="/assets/images/40.png" alt="Кот" />
           <div class="description">
             <div class="title">A cat on the money</div>
             <div class="cost"><span class="is-rcb">100</span>$</div>
           </div>
         </div>
         <div class="item">
-          <img src="/assets/images/40.png" alt="" />
+          <img src="/assets/images/40.png" alt="Кот" />
           <div class="description">
             <div class="title">A cat on the money</div>
             <div class="cost"><span class="is-rcb">100</span>$</div>
           </div>
         </div>
         <div class="item">
-          <img src="/assets/images/40.png" alt="" />
+          <img src="/assets/images/40.png" alt="Кот" />
           <div class="description">
             <div class="title">A cat on the money</div>
             <div class="cost"><span class="is-rcb">100</span>$</div>
           </div>
         </div>
         <div class="item">
-          <img src="/assets/images/40.png" alt="" />
+          <img src="/assets/images/40.png" alt="Кот" />
           <div class="description">
             <div class="title">A cat on the money</div>
             <div class="cost"><span class="is-rcb">100</span>$</div>
@@ -315,13 +373,18 @@
       <h2><span class="is-line">OU</span>R CONTACTS</h2>
       <div class="content">
         <div class="left">
-          <img src="/assets/images/41.png" class="is-1" loading="lazy" alt="" />
+          <img
+            src="/assets/images/41.png"
+            class="is-1"
+            loading="lazy"
+            alt="ТГ"
+          />
           <div class="tg">
             <img
               src="/assets/images/42.png"
               class="is-2"
               loading="lazy"
-              alt=""
+              alt="Мем"
             />
             <a href="https://t.me/thememeprotocol">@thememeprotocol</a>
             <div class="bg"></div>
@@ -333,13 +396,13 @@
               src="/assets/images/43.png"
               loading="lazy"
               class="is-1"
-              alt=""
+              alt="QR"
             />
             <img
               src="/assets/images/44.png"
               loading="lazy"
               class="is-2"
-              alt=""
+              alt="Хакер"
             />
           </div>
           <div class="bottom">

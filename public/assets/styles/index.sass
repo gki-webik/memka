@@ -147,6 +147,56 @@
                     width: 300px
                     top: -60px
                     left: 20px
+
+.block11
+    padding: 75px 50px
+    @media screen  and (max-width: 400px)
+        padding: 75px 20px
+    h2
+        color: $color-1
+        font-size: 3rem
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
+        span
+            &.is-line
+                border-bottom: 2px solid $color-1
+    .content
+        display: flex
+        gap: 40px
+        justify-content: space-between
+        @media screen  and (max-width: 885px)
+            flex-direction: column
+            align-items: center
+            justify-content: center
+        img
+            width: 100%
+            object-fit: contain
+            @media screen  and (max-width: 1193px)
+                width: 400px
+            @media screen  and (max-width: 978px)
+                width: 300px
+            @media screen  and (max-width: 520px)
+                display: none
+        .text
+            line-height: 1.6
+            color: #fff
+            font-weight: 500
+            font-size: 2rem
+            display: flex
+            align-items: center
+            @media screen  and (max-width: 1373px)
+                font-size: 1.5rem
+            @media screen  and (max-width: 1105px)
+                font-size: 1.3rem
+            @media screen  and (max-width: 978px)
+                font-size: 1.2rem
+            @media screen  and (max-width: 885px)
+                text-align: center
+            @media screen  and (max-width: 520px)
+                font-size: 1.1rem
+                text-align: left
+            @media screen  and (max-width: 430px)
+                font-size: 1rem
 .block2
     padding: 75px 50px
     @media screen  and (max-width: 400px)

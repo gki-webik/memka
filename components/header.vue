@@ -11,6 +11,12 @@
         </div>
         <nav ref="nav">
           <router-link
+            to="#b11"
+            @click="menuToggle"
+            class="router-link-active"
+            >{{ updateText.a11 }}</router-link
+          >
+          <router-link
             to="#b5"
             @click="menuToggle"
             class="router-link-active"
@@ -54,7 +60,7 @@
           >
           <router-link
             :to="getCurrentLang() === 'ru' ? '/en' : '/ru'"
-            @click="changeLang"
+            @click="changeLang2()"
             class="router-link-active"
           >
             {{ updateText.a8 }}
@@ -87,6 +93,7 @@ export default {
         a6: "Реклама",
         a7: "Контакты",
         a8: "Сменить язык",
+        a11: "О Нас",
       },
       enText: {
         a1: "Animation",
@@ -97,6 +104,7 @@ export default {
         a6: "Setup campaign",
         a7: "Contact",
         a8: "Change language",
+        a11: "About us",
       },
     };
   },
@@ -127,6 +135,10 @@ export default {
       let nav = this.$refs.nav;
       nav.classList.toggle("is-open");
       event.currentTarget.classList.toggle("is-open");
+    },
+    changeLang2() {
+      this.changeLang();
+      this.menuToggle();
     },
   },
 };

@@ -11,6 +11,9 @@
           <div><span class="is-rcb">@2024</span>, Все права защищены</div>
         </div>
         <nav ref="nav">
+          <router-link to="#b11" class="router-link-active">{{
+            updateText.a11
+          }}</router-link>
           <router-link to="#b5" class="router-link-active">{{
             updateText.a1
           }}</router-link>
@@ -63,6 +66,7 @@ export default {
         a6: "Реклама",
         a7: "Контакты",
         a8: "Сменить язык",
+        a11: "О Нас",
       },
       enText: {
         a1: "Animation",
@@ -73,6 +77,7 @@ export default {
         a6: "Setup campaign",
         a7: "Contact",
         a8: "Change language",
+        a11: "About us",
       },
     };
   },
