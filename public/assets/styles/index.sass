@@ -124,6 +124,7 @@
                 width: 550px
                 height: 490px
                 object-fit: cover
+                box-shadow: 0 0 38px #00cf0e40
                 @media screen and (max-width: 1210px)
                     width: 450px
                     height: 390px
@@ -382,7 +383,7 @@
 
     .items
         display: flex
-        justify-content: center
+        justify-content: space-around
         align-items: center
         flex-wrap: wrap
         gap: 100px
@@ -471,3 +472,128 @@
                         height: 112px
                         left: -27px
                         bottom: -20px
+.block6
+    padding: 75px 50px
+    overflow: hidden
+    @media screen  and (max-width: 655px)
+        padding: 75px 0px
+    h2
+        color: $color-1
+        font-size: 3rem
+        @media screen  and (max-width: 655px)
+            padding: 10px 20px
+        span
+            &.is-line
+                border-bottom: 2px solid $color-1
+
+    h3
+        color: #fff
+        font-size: 1.6rem
+        line-height: 1.4
+        @media screen  and (max-width: 655px)
+            padding: 0px 20px
+        @media screen and (max-width: 400px)
+            font-size: 1.3rem
+    .items
+        display: flex
+        justify-content: space-between
+        margin-top: 50px
+        gap: 100px
+        @media screen and (max-width: 655px)
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 20px
+        .item
+            position: relative
+            overflow: hidden
+            @media screen  and (max-width: 655px)
+                width: 100%
+        video
+            pointer-events: all !important
+        img.is-1, video.is-2
+            user-select: none
+            pointer-events: none
+            height: 500px
+            @media screen and (max-width: 1400px)
+                height: 400px
+            @media screen and (max-width: 1324px)
+                height: 300px
+            @media screen and (max-width: 1050px)
+                height: 200px
+            @media screen and (max-width: 840px)
+                height: 170px
+            @media screen and (max-width: 655px)
+                height: 100%
+                width: 100%
+        .video
+            position: relative
+            & .cp
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                cursor: pointer
+                width: 200px
+                display: flex
+                justify-content: center
+                align-items: center
+                z-index: 15
+                img
+                    width: 200px
+                    @media screen and (max-width: 970px)
+                        width: 100px
+                        img
+                            width: 100px
+        .description
+            margin-top: 15px
+            @media screen  and (max-width: 655px)
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                padding: 13px
+                .bg
+                    background: rgb(0 0 0 / 60%)
+                    position: absolute
+                    filter: blur(23px)
+                    bottom: -50px
+                    left: 0
+                    width: 100%
+                    height: 150px
+                    left: -50px
+
+            .title
+                color: $color-1
+                font-size: 1.3rem
+                font-weight: 600
+                position: relative
+                z-index: 5
+            .cost
+                color: #fff
+                font-size: 2.5rem
+                font-weight: 600
+                position: relative
+                z-index: 5
+.block7
+    position: relative
+    .fullWidthVideo
+        video
+            width: 100%
+        .cp
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            cursor: pointer
+            width: 200px
+            display: flex
+            justify-content: center
+            align-items: center
+            z-index: 15
+            img
+                width: 200px
+                @media screen and (max-width: 970px)
+                    width: 100px
+                    img
+                        width: 100px

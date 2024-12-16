@@ -97,7 +97,7 @@
     </div>
     <div class="block5" id="b5">
       <h2>
-        <span class="is-line"><span class="is-rcb">2</span>D</span> Сайты
+        <span class="is-line"><span class="is-rcb">2</span>D</span> Анимация
       </h2>
       <h3>РАЗРАБОТКА ПЕРСОНАЖА В <span class="is-rcb">2</span>D И АНИМАЦИЯ</h3>
       <div class="items">
@@ -180,6 +180,75 @@
               />
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="block6">
+      <h2>
+        <span class="is-line"><span class="is-rcb">3</span>D</span> Анимация
+      </h2>
+      <h3>РАЗРАБОТКА ПЕРСОНАЖА В <span class="is-rcb">3</span>D И АНИМАЦИЯ</h3>
+      <div class="items">
+        <div class="item">
+          <img src="/assets/images/37.png" loading="lazy" class="is-1" alt="" />
+          <div class="description" @click="togglePlay2('video4')">
+            <div class="title">
+              Разработка <span class="is-rcb">3</span>D персонажа
+            </div>
+            <div class="cost"><span class="is-rcb">350</span>$</div>
+            <div class="bg"></div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="video">
+            <video
+              poster="/assets/images/39.png"
+              ref="video4"
+              class="is-2"
+              src="/assets/images/38.mp4"
+              @click="togglePlay2('video4')"
+              @ended="onVideoEnd2('video4')"
+            ></video>
+            <div class="cp" @click="togglePlay2('video4')">
+              <img
+                src="/assets/images/36.svg"
+                loading="lazy"
+                v-if="!isPlaying1"
+                class="play-button"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="description" @click="togglePlay2('video4')">
+            <div class="title">
+              <span class="is-rcb">3</span>D анимация (<span class="is-rcb"
+                >15</span
+              >
+              секунд)
+            </div>
+            <div class="cost"><span class="is-rcb">350</span>$</div>
+            <div class="bg"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="block7">
+      <div class="fullWidthVideo">
+        <video
+          ref="video5"
+          class="is-2"
+          src="/assets/images/32.mp4"
+          @click="togglePlay3('video5')"
+          @ended="onVideoEnd3('video5')"
+        ></video>
+        <div class="cp" @click="togglePlay3('video5')">
+          <img
+            src="/assets/images/36.svg"
+            loading="lazy"
+            v-if="!isPlaying2"
+            class="play-button"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -314,6 +383,8 @@ export default {
         { ref: "video2", src: "/assets/images/34.mp4", isPlaying: false },
         { ref: "video3", src: "/assets/images/35.mp4", isPlaying: false },
       ],
+      isPlaying1: false,
+      isPlaying2: false,
     };
   },
   props: {
@@ -339,16 +410,52 @@ export default {
         console.error(`Video element with ref ${videoRef} not found.`);
       }
     },
-    onVideoEnd(index) {
-      const videoData = this.videos[index];
-      if (videoData) {
-        videoData.isPlaying = false;
-      }
-    },
     onVideoEnd(videoRef) {
       const videoData = this.videos.find((v) => v.ref === videoRef);
       if (videoData) {
         videoData.isPlaying = false;
+      }
+    },
+    togglePlay2() {
+      const videoRef = `video4`;
+      const video = this.$refs.video4;
+      if (video) {
+        if (video.paused) {
+          video.play();
+          this.isPlaying1 = true;
+        } else {
+          video.pause();
+          this.isPlaying1 = false;
+        }
+      } else {
+        console.error(`Video element with ref ${videoRef} not found.`);
+      }
+    },
+    onVideoEnd2() {
+      const videoData = this.$refs.video4;
+      if (videoData) {
+        videoData.isPlaying1 = false;
+      }
+    },
+    togglePlay3() {
+      const videoRef = `video5`;
+      const video = this.$refs.video5;
+      if (video) {
+        if (video.paused) {
+          video.play();
+          this.isPlaying2 = true;
+        } else {
+          video.pause();
+          this.isPlaying2 = false;
+        }
+      } else {
+        console.error(`Video element with ref ${videoRef} not found.`);
+      }
+    },
+    onVideoEnd3() {
+      const videoData = this.$refs.video5;
+      if (videoData) {
+        videoData.isPlaying2 = false;
       }
     },
   },
