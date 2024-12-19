@@ -31,18 +31,17 @@ bot.onText(/\/invoice/, (msg) => {
   const title = 'Пример товара';
   const description = 'Описание товара';
   const payload = 'payload';
-  const providerToken = 'ВАШ_ТОКЕН_ПРОВАЙДЕРА';
-  const startParameter = 'start';
+  const providerToken = 'ВАШ_ТОКЕН_ПРОВАЙДЕРА'; // Замените на ваш токен
   const currency = 'RUB';
   const prices = [
-    { label: 'Цена', amount: 8000 } // 80 рублей в копейках
+    { label: 'Цена', amount: 8000 } // Убедитесь, что amount указан в копейках
   ];
 
   console.log('Отправка инвойса:', {
-    chatId, title, description, payload, providerToken, startParameter, currency, prices
+    chatId, title, description, payload, providerToken, currency, prices
   });
 
-  bot.sendInvoice(chatId, title, description, payload, providerToken, startParameter, currency, prices)
+  bot.sendInvoice(chatId, title, description, payload, providerToken, currency, prices)
     .then(() => {
       console.log('Инвойс успешно отправлен');
     })
