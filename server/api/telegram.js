@@ -1,6 +1,7 @@
 import { defineEventHandler, readBody } from 'h3';
 import TelegramBot from 'node-telegram-bot-api';
 
+// Убедитесь, что токен бота и токен провайдера платежей корректны
 const botToken = '7600941340:AAF6MjBwenwZCiFUHkWIVZf7hAcYnHZu18Y';
 const webhookUrl = 'https://memka.vercel.app/api/telegram';
 const bot = new TelegramBot(botToken, { webHook: true });
@@ -18,7 +19,7 @@ bot.onText(/\/start/, (msg) => {
       one_time_keyboard: true
     }
   };
-  bot.sendMessage(chatId, 'Добро пожаловать! Чем я могу тебе помочь?', options);
+  bot.sendMessage(chatId, 'Добро пожаловатьв! Чем я могу тебе помочь?', options);
 });
 
 bot.onText(/\/invoice/, (msg) => {
@@ -26,12 +27,24 @@ bot.onText(/\/invoice/, (msg) => {
   const title = 'Пример товара';
   const description = 'Описание товара';
   const payload = 'payload';
-  const providerToken = '390540012:LIVE:62403';
+  const providerToken = 'ВАШ_ТОКЕН_ПРОВАЙДЕРА';
   const startParameter = 'start';
   const currency = 'RUB';
-  const prices = [{ label: 'Цена', amount: 80*100 }];
+  const prices = [{ label: 'Цена', amount: 8000 }]; // 80 рублей в копейках
 
-  bot.sendInvoice(chatId, title, description, payload, providerToken, startParameter, currency, prices);
+  // Добавим логирование для отладки
+  console.log('Отправка инвойса:', {
+    chatId, title, description, payload, providerToken, startParameter, currency, prices
+  });
+
+  bot.sendInvoice(chatId, title, description, payload, providerToken, startParameter, currency, prices)
+    .then(() => {
+      console.log('Инвойс успешно отправлен');
+    })
+    .catch((error) => {
+      console.error('Ошибка отправки инвойса:', error);
+      bot.sendMessage(chatId, `Ошибка отправки инвойса: ${error.message}`);
+    });
 });
 
 export default defineEventHandler(async (event) => {
@@ -41,6 +54,9 @@ export default defineEventHandler(async (event) => {
     return 'OK';
   } catch (error) {
     console.error('Ошибка обработки обновления:', error);
+    // Отправляем сообщение об ошибке в чат
+    const chatId = event.body.message.chat.id;
+    bot.sendMessage(chatId, `Ошибка обработки обновления: ${error.message}`);
     return 'Error';
   }
 });
