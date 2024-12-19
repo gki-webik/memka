@@ -411,11 +411,6 @@
         </div>
       </div>
     </div>
-    <div>
-      <form method="post" action="/api/bank.php">
-        <button type="submit">Списать 10 монет</button>
-      </form>
-    </div>
   </main>
 </template>
 
