@@ -17,17 +17,19 @@ function sendInvoice($chat_id, $token, $provider_token)
         'start_parameter' => 'get_access'
     );
 
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-        "Content-Type:application/json"
-    ));
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($post_fields));
-    $output = curl_exec($ch);
-    curl_close($ch);
-    return $output;
+    $options = array(
+        'http' => array(
+            'header' => "Content-type: application/json\r\n",
+            'method' => 'POST',
+            'content' => json_encode($post_fields),
+        ),
+    );
+    $context = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+    return $result;
 }
+
+echo sendInvoice($chat_id, $token, $provider_token);
 
 echo sendInvoice($chat_id, $token, $provider_token);
 ?>
