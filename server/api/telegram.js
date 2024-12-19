@@ -1,3 +1,4 @@
+// server/api/telegram.js
 import { Telegraf } from 'telegraf';
 
 // Замените 'YOUR_TELEGRAM_BOT_TOKEN' на токен вашего бота
@@ -7,7 +8,7 @@ const bot = new Telegraf('7600941340:AAF6MjBwenwZCiFUHkWIVZf7hAcYnHZu18Y');
 bot.start((ctx) => {
   ctx.reply('Добро пожаловать! Это стартовая команда.');
 });
-
+bot.telegram.sendMessage("6317166538", 'блабла');
 // Обработка команды /test
 bot.command('test', (ctx) => {
   ctx.reply('Вы использовали команду /test.');
@@ -30,10 +31,8 @@ bot.command('invoice', (ctx) => {
   createInvoice(ctx);
 });
 
-// Запуск бота с использованием polling
-bot.launch().then(() => {
-  console.log('Бот запущен с использованием polling');
-});
+// Запуск бота
+bot.launch();
 
 // Обработка ошибок
 bot.catch((err) => {
