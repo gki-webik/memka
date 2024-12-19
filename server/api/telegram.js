@@ -2,9 +2,8 @@
 import { defineEventHandler, readBody } from 'h3';
 import TelegramBot from 'node-telegram-bot-api';
 
-
 const botToken = '7600941340:AAF6MjBwenwZCiFUHkWIVZf7hAcYnHZu18Y';
-const webhookUrl = 'https://memka.vercel.app/api/telegram';// Замените на ваш публичный URL
+const webhookUrl = 'https://memka.vercel.app/api/telegram'; // Замените на ваш публичный URL
 
 // Инициализация бота
 const bot = new TelegramBot(botToken);
@@ -24,10 +23,22 @@ export default defineEventHandler(async (event) => {
       bot.sendMessage(chatId, 'Добро пожаловать! Это стартовая команда.');
     } else if (text === '/test') {
       bot.sendMessage(chatId, 'Вы использовали команду /test.');
-    } else if (text === '/mem big 9') {
-      bot.sendMessage(chatId, 'Вы запросили мем с параметрами big 9.');
+    } else if (text.startsWith('/mem')) {
+      const memParams = text.split(' ').slice(1); // Извлечение параметров
+      bot.sendMessage(chatId, `Вы запросили мем с параметрами: ${memParams.join(', ')}.`);
     } else if (text === '/invoice') {
       createInvoice(chatId);
+    } else if (text === '/try') {
+      bot.sendMessage(chatId, 'Вы использовали команду /try.');
+    }
+  } else if (body.message && body.message.entities) {
+    // Обработка команды, переданной через ссылку
+    const startEntity = body.message.entities.find(entity => entity.type === 'bot_command' && body.message.text.startsWith('/start'));
+    if (startEntity) {
+      const startParam = body.message.text.slice(startEntity.offset + startEntity.length).trim();
+      if (startParam === 'try') {
+        bot.sendMessage(body.message.chat.id, 'Вы использовали команду /try через ссылку.');
+      }
     }
   }
 
