@@ -30,6 +30,4 @@ function sendInvoice($chat_id, $token, $provider_token)
 }
 
 echo sendInvoice($chat_id, $token, $provider_token);
-
-echo sendInvoice($chat_id, $token, $provider_token);
 ?>
