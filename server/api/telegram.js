@@ -13,6 +13,9 @@ bot.onText(/\/start/, (msg) => {
     reply_markup: {
       keyboard: [
         ['/start', '/invoice'],
+        ['/location', '/contact'],
+        ['/typing', '/contact'],
+        ['/mem 9 3', '/getchat'],
       ],
       resize_keyboard: true,
       one_time_keyboard: true
@@ -83,6 +86,26 @@ bot.onText(/\/typing/, (msg) => {
   const chatId = msg.chat.id;
   bot.sendChatAction(chatId, 'typing');
 });
+
+bot.onText(/\/mem (\S+) (\S+)/, (msg, match) => {
+  const chatId = msg.chat.id;
+  const param1 = match[1];
+  const param2 = match[2];
+
+  bot.sendMessage(chatId, `Вы ввели параметры: ${param1} и ${param2}`)
+    .catch((error) => {
+      console.error('Ошибка отправки сообщения /mem:', error);
+      bot.sendMessage(chatId, `Ошибка: ${error.message}`);
+    });
+});
+
+bot.onText(/\/getchat/, (msg) => {
+  const chatId = msg.chat.id;
+  bot.getChat(chatId).then(chat => {
+    bot.sendMessage(chatId, `Название чата: ${JSON.stringify(chat)}`);
+  });
+});
+
 
 export default defineEventHandler(async (event) => {
   try {
