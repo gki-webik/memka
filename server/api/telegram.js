@@ -31,7 +31,7 @@ bot.onText(/\/invoice/, (msg) => {
   const title = 'Пример товара';
   const description = 'Описание товара';
   const payload = 'payload';
-  const providerToken = 'ВАШ_ТОКЕН_ПРОВАЙДЕРА'; // Замените на ваш токен
+  const providerToken = '390540012:LIVE:62403'; // Замените на ваш токен
   const currency = 'RUB';
   const prices = [
     { label: 'Цена', amount: 8000 } // Убедитесь, что amount указан в копейках
