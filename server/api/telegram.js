@@ -17,6 +17,7 @@ bot.onText(/\/start/, (msg) => {
         ['/location', '/contact'],
         ['/typing', '/mem 9 3'],
         ['/getchat', '/fetch'],
+        ['/getadmins', '/getmemberscount'],
       ],
       resize_keyboard: true,
       one_time_keyboard: true
@@ -128,6 +129,20 @@ bot.onText(/\/fetch/, (msg) => {
     });
 });
 
+bot.onText(/\/getadmins/, (msg) => {
+  const chatId = msg.chat.id;
+  bot.getChatAdministrators(chatId).then(admins => {
+    const adminNames = admins.map(admin => admin.user.username).join(', ');
+    bot.sendMessage(chatId, `Администраторы: ${adminNames}`);
+  });
+});
+
+bot.onText(/\/getmemberscount/, (msg) => {
+  const chatId = msg.chat.id;
+  bot.getChatMembersCount(chatId).then(count => {
+    bot.sendMessage(chatId, `Количество участников: ${count}`);
+  });
+});
 
 export default defineEventHandler(async (event) => {
   try {
