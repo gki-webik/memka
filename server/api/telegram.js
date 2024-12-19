@@ -1,10 +1,13 @@
 import { defineEventHandler, readBody } from 'h3';
 import TelegramBot from 'node-telegram-bot-api';
 
+// Ваш токен бота
 const botToken = '7600941340:AAF6MjBwenwZCiFUHkWIVZf7hAcYnHZu18Y';
+
+// URL вашего вебхука
 const webhookUrl = 'https://memka.vercel.app/api/telegram';
 
-const bot = new TelegramBot(botToken, { webHook: { port: 443 } });
+const bot = new TelegramBot(botToken, { webHook: true });
 
 bot.setWebHook(webhookUrl);
 
@@ -37,10 +40,15 @@ bot.onText(/\/try/, (msg) => {
 });
 
 export default defineEventHandler(async (event) => {
-  const body = await readBody(event);
+  try {
+    const body = await readBody(event);
 
-  // Обработка входящих обновлений
-  bot.processUpdate(body);
+    // Обработка входящих обновлений
+    bot.processUpdate(body);
 
-  return 'OK';
+    return 'OK';
+  } catch (error) {
+    console.error('Ошибка обработки обновления:', error);
+    return 'Error';
+  }
 });
