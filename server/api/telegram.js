@@ -114,8 +114,6 @@ bot.onText(/\/getchat/, (msg) => {
     });
 });
 
-
-
 bot.onText(/\/fetch/, (msg) => {
   const chatId = msg.chat.id;
   fetch('https://jsonplaceholder.typicode.com/todos/1')
@@ -126,6 +124,8 @@ bot.onText(/\/fetch/, (msg) => {
     .catch(error => {
       console.error('Ошибка получения данных:', error);
       bot.sendMessage(chatId, `Ошибка: ${error.message}`);
+    }).finally(() => {
+      bot.sendMessage(chatId, `Отправьте в чат любой символ, чтобы получить результат.`);
     });
 });
 
