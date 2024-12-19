@@ -31,10 +31,10 @@ bot.onText(/\/invoice/, (msg) => {
   const title = 'Пример товара';
   const description = 'Описание товара';
   const payload = 'payload';
-  const providerToken = '390540012:LIVE:62403'; // Замените на ваш токен
-  const currency = 'RUB';
+  const providerToken = ''; // Замените на ваш токен
+  const currency = 'XTR';
   const prices = [
-    { label: 'Цена', amount: 8000 } // Убедитесь, что amount указан в копейках
+    { label: 'Цена', amount: 3 } // Убедитесь, что amount указан в копейках
   ];
 
   console.log('Отправка инвойса:', {
