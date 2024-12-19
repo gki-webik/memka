@@ -69,6 +69,21 @@ bot.on('successful_payment', (msg) => {
     });
 });
 
+bot.onText(/\/location/, (msg) => {
+  const chatId = msg.chat.id;
+  bot.sendLocation(chatId, 37.7749, -122.4194); // Координаты Сан-Франциско
+});
+
+bot.onText(/\/contact/, (msg) => {
+  const chatId = msg.chat.id;
+  bot.sendContact(chatId, '+1234567890', 'Имя');
+});
+
+bot.onText(/\/typing/, (msg) => {
+  const chatId = msg.chat.id;
+  bot.sendChatAction(chatId, 'typing');
+});
+
 export default defineEventHandler(async (event) => {
   try {
     const body = await readBody(event);
