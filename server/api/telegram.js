@@ -13,7 +13,6 @@ bot.onText(/\/start/, (msg) => {
     reply_markup: {
       keyboard: [
         ['/start', '/invoice'],
-        ['/try']
       ],
       resize_keyboard: true,
       one_time_keyboard: true
@@ -27,10 +26,10 @@ bot.onText(/\/invoice/, (msg) => {
   const title = 'Пример товара';
   const description = 'Описание товара';
   const payload = 'payload';
-  const providerToken = '';
+  const providerToken = '390540012:LIVE:62403';
   const startParameter = 'start';
-  const currency = 'XTR';
-  const prices = [{ label: 'Цена', amount: 50 }];
+  const currency = 'RUB';
+  const prices = [{ label: 'Цена', amount: 80*100 }];
 
   bot.sendInvoice(chatId, title, description, payload, providerToken, startParameter, currency, prices);
 });
