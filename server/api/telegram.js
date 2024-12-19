@@ -1,7 +1,6 @@
 import { defineEventHandler, readBody } from 'h3';
 import TelegramBot from 'node-telegram-bot-api';
 
-// Убедитесь, что токен бота и токен провайдера платежей корректны
 const botToken = '7600941340:AAF6MjBwenwZCiFUHkWIVZf7hAcYnHZu18Y';
 const webhookUrl = 'https://memka.vercel.app/api/telegram';
 const bot = new TelegramBot(botToken, { webHook: true });
@@ -31,10 +30,10 @@ bot.onText(/\/invoice/, (msg) => {
   const title = 'Пример товара';
   const description = 'Описание товара';
   const payload = 'payload';
-  const providerToken = ''; // Замените на ваш токен
+  const providerToken = '';
   const currency = 'XTR';
   const prices = [
-    { label: 'Цена', amount: 3 } // Убедитесь, что amount указан в копейках
+    { label: 'Цена', amount: 3 }
   ];
 
   console.log('Отправка инвойса:', {
@@ -48,6 +47,25 @@ bot.onText(/\/invoice/, (msg) => {
     .catch((error) => {
       console.error('Ошибка отправки инвойса:', error);
       bot.sendMessage(chatId, `Ошибка отправки инвойса: ${error.message}`);
+    });
+});
+
+bot.on('pre_checkout_query', (query) => {
+  bot.answerPreCheckoutQuery(query.id, true)
+    .catch((error) => {
+      console.error('Ошибка подтверждения pre_checkout_query:', error);
+    });
+});
+
+bot.on('successful_payment', (msg) => {
+  const chatId = msg.chat.id;
+  const paymentInfo = msg.successful_payment;
+
+  console.log('Успешная оплата:', paymentInfo);
+
+  bot.sendMessage(chatId, 'Спасибо за оплату! Ваш платеж был успешно обработан.')
+    .catch((error) => {
+      console.error('Ошибка отправки сообщения об успешной оплате:', error);
     });
 });
 
