@@ -120,12 +120,11 @@ bot.onText(/\/fetch/, (msg) => {
     .then(response => response.json())
     .then(json => {
       bot.sendMessage(chatId, `JSON: ${JSON.stringify(json)}`);
+      bot.processUpdate(body);
     })
     .catch(error => {
       console.error('Ошибка получения данных:', error);
       bot.sendMessage(chatId, `Ошибка: ${error.message}`);
-    }).finally(() => {
-      bot.sendMessage(chatId, `Отправьте в чат любой символ, чтобы получить результат.`);
     });
 });
 
