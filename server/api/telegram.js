@@ -114,18 +114,19 @@ bot.onText(/\/getchat/, (msg) => {
     });
 });
 
-bot.onText(/\/fetch/, (msg) => {
+
+bot.onText(/\/fetch/, async (msg) => {
   const chatId = msg.chat.id;
-  fetch('https://jsonplaceholder.typicode.com/todos/1')
-    .then(response => response.json())
-    .then(json => {
-      bot.sendMessage(chatId, `JSON: ${JSON.stringify(json)}`);
-      bot.processUpdate(body);
-    })
-    .catch(error => {
-      console.error('Ошибка получения данных:', error);
-      bot.sendMessage(chatId, `Ошибка: ${error.message}`);
-    });
+  try {
+    console.log('Выполнение запроса к API...');
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+    const json = await response.json();
+    console.log('Получен ответ от API:', json);
+    bot.sendMessage(chatId, `JSON: ${JSON.stringify(json)}`);
+  } catch (error) {
+    console.error('Ошибка получения данных:', error);
+    bot.sendMessage(chatId, `Ошибка: ${error.message}`);
+  }
 });
 
 bot.onText(/\/getadmins/, (msg) => {
