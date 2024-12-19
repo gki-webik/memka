@@ -34,5 +34,3 @@ bot.onText(/\/invoice/, (msg) => {
   const chatId = msg.chat.id;
   createInvoice(chatId);
 });
-
-module.exports = bot;
