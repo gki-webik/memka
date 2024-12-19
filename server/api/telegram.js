@@ -6,6 +6,7 @@ const botToken = '7600941340:AAF6MjBwenwZCiFUHkWIVZf7hAcYnHZu18Y';
 const webhookUrl = 'https://memka.vercel.app/api/telegram';
 const bot = new TelegramBot(botToken, { webHook: true });
 
+
 bot.setWebHook(webhookUrl);
 
 bot.onText(/\/start/, (msg) => {
@@ -19,7 +20,11 @@ bot.onText(/\/start/, (msg) => {
       one_time_keyboard: true
     }
   };
-  bot.sendMessage(chatId, 'Добро пожаловатьв! Чем я могу тебе помочь?', options);
+  bot.sendMessage(chatId, 'Добро пожаловать! Чем я могу тебе помочь?', options)
+    .catch((error) => {
+      console.error('Ошибка отправки сообщения /start:', error);
+      bot.sendMessage(chatId, `Ошибка: ${error.message}`);
+    });
 });
 
 bot.onText(/\/invoice/, (msg) => {
@@ -32,7 +37,6 @@ bot.onText(/\/invoice/, (msg) => {
   const currency = 'RUB';
   const prices = [{ label: 'Цена', amount: 8000 }]; // 80 рублей в копейках
 
-  // Добавим логирование для отладки
   console.log('Отправка инвойса:', {
     chatId, title, description, payload, providerToken, startParameter, currency, prices
   });
@@ -50,13 +54,16 @@ bot.onText(/\/invoice/, (msg) => {
 export default defineEventHandler(async (event) => {
   try {
     const body = await readBody(event);
+    console.log('Получено обновление:', body);
     bot.processUpdate(body);
     return 'OK';
   } catch (error) {
     console.error('Ошибка обработки обновления:', error);
-    // Отправляем сообщение об ошибке в чат
-    const chatId = event.body.message.chat.id;
-    bot.sendMessage(chatId, `Ошибка обработки обновления: ${error.message}`);
+    // Проверяем, есть ли информация о чате в теле запроса
+    if (event.body && event.body.message && event.body.message.chat) {
+      const chatId = event.body.message.chat.id;
+      bot.sendMessage(chatId, `Ошибка обработки обновления: ${error.message}`);
+    }
     return 'Error';
   }
 });
