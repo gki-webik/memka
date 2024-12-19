@@ -14,8 +14,8 @@ bot.onText(/\/start/, (msg) => {
       keyboard: [
         ['/start', '/invoice'],
         ['/location', '/contact'],
-        ['/typing', '/contact'],
-        ['/mem 9 3', '/getchat'],
+        ['/typing', '/mem 9 3'],
+        ['/getchat', '/fetch'],
       ],
       resize_keyboard: true,
       one_time_keyboard: true
@@ -105,6 +105,18 @@ bot.onText(/\/getchat/, (msg) => {
     bot.sendMessage(chatId, `Название чата: ${JSON.stringify(chat)}`);
   });
 });
+
+
+bot.onText(/\/fetch/, (msg) => {
+  const chatId = msg.chat.id;
+  fetch('https://jsonplaceholder.typicode.com/todos/1')
+    .then(response => response.json())
+    .then(json => {
+      bot.sendMessage(chatId, `JSON: ${JSON.stringify(json)}`);
+    })
+});
+
+
 
 
 export default defineEventHandler(async (event) => {
