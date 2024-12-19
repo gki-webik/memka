@@ -1,5 +1,6 @@
 import { defineEventHandler, readBody } from 'h3';
 import TelegramBot from 'node-telegram-bot-api';
+import fetch from 'node-fetch';
 
 const botToken = '7600941340:AAF6MjBwenwZCiFUHkWIVZf7hAcYnHZu18Y';
 const webhookUrl = 'https://memka.vercel.app/api/telegram';
@@ -101,10 +102,17 @@ bot.onText(/\/mem (\S+) (\S+)/, (msg, match) => {
 
 bot.onText(/\/getchat/, (msg) => {
   const chatId = msg.chat.id;
-  bot.getChat(chatId).then(chat => {
-    bot.sendMessage(chatId, `Название чата: ${JSON.stringify(chat)}`);
-  });
+  bot.getChat(chatId)
+    .then(chat => {
+      const formattedChat = JSON.stringify(chat, null, 2);
+      bot.sendMessage(chatId, `Информация о чате:\n${formattedChat}`);
+    })
+    .catch(error => {
+      console.error('Ошибка получения информации о чате:', error);
+      bot.sendMessage(chatId, `Ошибка: ${error.message}`);
+    });
 });
+
 
 
 bot.onText(/\/fetch/, (msg) => {
@@ -114,9 +122,11 @@ bot.onText(/\/fetch/, (msg) => {
     .then(json => {
       bot.sendMessage(chatId, `JSON: ${JSON.stringify(json)}`);
     })
+    .catch(error => {
+      console.error('Ошибка получения данных:', error);
+      bot.sendMessage(chatId, `Ошибка: ${error.message}`);
+    });
 });
-
-
 
 
 export default defineEventHandler(async (event) => {
