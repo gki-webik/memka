@@ -1,39 +1,37 @@
-// server/api/telegram.js
-import { defineEventHandler } from 'h3';
+import { defineEventHandler, useBody } from 'h3';
 import TelegramBot from 'node-telegram-bot-api';
 
-// Проверяем, существует ли уже экземпляр бота
-if (!global.bot) {
-  global.bot = new TelegramBot('7600941340:AAF6MjBwenwZCiFUHkWIVZf7hAcYnHZu18Y', { polling: true });
+const botToken = '7600941340:AAF6MjBwenwZCiFUHkWIVZf7hAcYnHZu18Y';
+const webhookUrl = 'https://memka.vercel.app/api/telegram'; // Замените на ваш публичный URL
 
-  // Отправка сообщения при инициализации бота
-  global.bot.sendMessage("6317166538", 'Вы запросили мем с параметрами big 9.');
+// Инициализация бота
+const bot = new TelegramBot(botToken);
 
-  global.bot.onText(/\/start/, (msg) => {
-    const chatId = msg.chat.id;
-    global.bot.sendMessage(chatId, 'Добро пожаловать! Это стартовая команда.');
-  });
+// Установка webhook
+bot.setWebHook(webhookUrl);
 
-  global.bot.onText(/\/test/, (msg) => {
-    const chatId = msg.chat.id;
-    global.bot.sendMessage(chatId, 'Вы использовали команду /test.');
-  });
+export default defineEventHandler(async (event) => {
+  const body = await useBody(event);
 
-  global.bot.onText(/\/mem big 9/, (msg) => {
-    const chatId = msg.chat.id;
-    global.bot.sendMessage(chatId, 'Вы запросили мем с параметрами big 9.');
-  });
+  // Обработка входящих сообщений
+  if (body.message) {
+    const chatId = body.message.chat.id;
+    const text = body.message.text;
 
-  function createInvoice(chatId) {
-    global.bot.sendMessage(chatId, 'Счет на оплату создан.');
+    if (text === '/start') {
+      bot.sendMessage(chatId, 'Добро пожаловать! Это стартовая команда.');
+    } else if (text === '/test') {
+      bot.sendMessage(chatId, 'Вы использовали команду /test.');
+    } else if (text === '/mem big 9') {
+      bot.sendMessage(chatId, 'Вы запросили мем с параметрами big 9.');
+    } else if (text === '/invoice') {
+      createInvoice(chatId);
+    }
   }
 
-  global.bot.onText(/\/invoice/, (msg) => {
-    const chatId = msg.chat.id;
-    createInvoice(chatId);
-  });
-}
-
-export default defineEventHandler((event) => {
-  return 'Бот работает';
+  return 'OK';
 });
+
+function createInvoice(chatId) {
+  bot.sendMessage(chatId, 'Счет на оплату создан.');
+}
