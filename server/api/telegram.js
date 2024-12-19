@@ -114,12 +114,16 @@ bot.onText(/\/getchat/, (msg) => {
     });
 });
 
-
 bot.onText(/\/fetch/, async (msg) => {
   const chatId = msg.chat.id;
   try {
     console.log('Выполнение запроса к API...');
     const response = await fetch('https://jsonplaceholder.typicode.com/todos/1');
+
+    if (!response.ok) {
+      throw new Error(`Ошибка сети: ${response.status} ${response.statusText}`);
+    }
+
     const json = await response.json();
     console.log('Получен ответ от API:', json);
     bot.sendMessage(chatId, `JSON: ${JSON.stringify(json)}`);
@@ -128,7 +132,6 @@ bot.onText(/\/fetch/, async (msg) => {
     bot.sendMessage(chatId, `Ошибка: ${error.message}`);
   }
 });
-
 bot.onText(/\/getadmins/, (msg) => {
   const chatId = msg.chat.id;
   bot.getChatAdministrators(chatId).then(admins => {
