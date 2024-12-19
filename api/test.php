@@ -17,15 +17,15 @@ if (isset($update['pre_checkout_query'])) {
         'ok' => true
     );
 
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-        "Content-Type:application/json"
-    ));
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($post_fields));
-    curl_exec($ch);
-    curl_close($ch);
+    $options = array(
+        'http' => array(
+            'header' => "Content-Type: application/json\r\n",
+            'method' => 'POST',
+            'content' => json_encode($post_fields),
+        ),
+    );
+    $context = stream_context_create($options);
+    file_get_contents($url, false, $context);
 }
 
 if (isset($update['message']['successful_payment'])) {
@@ -41,14 +41,14 @@ if (isset($update['message']['successful_payment'])) {
         'text' => "Спасибо за оплату! Ваш платеж на сумму $amount $currency успешно получен."
     );
 
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-        "Content-Type:application/json"
-    ));
-    curl_setopt($ch, CURLOPT_URL, $url);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($post_fields));
-    curl_exec($ch);
-    curl_close($ch);
+    $options = array(
+        'http' => array(
+            'header' => "Content-Type: application/json\r\n",
+            'method' => 'POST',
+            'content' => json_encode($post_fields),
+        ),
+    );
+    $context = stream_context_create($options);
+    file_get_contents($url, false, $context);
 }
 ?>
