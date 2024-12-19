@@ -1,6 +1,6 @@
 import { defineEventHandler, readBody } from 'h3';
 import TelegramBot from 'node-telegram-bot-api';
-import fetch from 'node-fetch';
+import axios from 'axios';
 
 const botToken = '7600941340:AAF6MjBwenwZCiFUHkWIVZf7hAcYnHZu18Y';
 const webhookUrl = 'https://memka.vercel.app/api/telegram';
@@ -132,7 +132,20 @@ bot.onText(/\/fetch/, async (msg) => {
     bot.sendMessage(chatId, `Ошибка: ${error.message}`);
   }
 });
-bot.onText(/\/getadmins/, (msg) => {
+bot.onText(/\/fetch/, async (msg) => {
+  const chatId = msg.chat.id;
+  try {
+    console.log('Выполнение запроса к API...');
+    const response = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
+    console.log('Получен ответ от API:', response.data);
+    bot.sendMessage(chatId, `JSON: ${JSON.stringify(response.data)}`);
+  } catch (error) {
+    console.error('Ошибка получения данных:', error);
+    bot.sendMessage(chatId, `Ошибка: ${error.message}`);
+  }
+});
+
+/* bot.onText(/\/getadmins/, (msg) => {
   const chatId = msg.chat.id;
   bot.getChatAdministrators(chatId).then(admins => {
     const adminNames = admins.map(admin => admin.user.username).join(', ');
@@ -146,7 +159,7 @@ bot.onText(/\/getmemberscount/, (msg) => {
     bot.sendMessage(chatId, `Количество участников: ${count}`);
   });
 });
-
+ */
 export default defineEventHandler(async (event) => {
   try {
     const body = await readBody(event);
