@@ -1,4 +1,3 @@
-// server/api/telegram.js
 import { Telegraf } from 'telegraf';
 
 // Замените 'YOUR_TELEGRAM_BOT_TOKEN' на токен вашего бота
@@ -31,8 +30,10 @@ bot.command('invoice', (ctx) => {
   createInvoice(ctx);
 });
 
-// Запуск бота
-bot.launch();
+// Запуск бота с использованием polling
+bot.launch().then(() => {
+  console.log('Бот запущен с использованием polling');
+});
 
 // Обработка ошибок
 bot.catch((err) => {
