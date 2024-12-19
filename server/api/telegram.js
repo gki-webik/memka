@@ -30,7 +30,7 @@ bot.onText(/\/invoice/, (msg) => {
   const providerToken = '';
   const startParameter = 'start';
   const currency = 'XTR';
-  const prices = [{ label: 'Цена', amount: 3 }];
+  const prices = [{ label: 'Цена', amount: 50 }];
 
   bot.sendInvoice(chatId, title, description, payload, providerToken, startParameter, currency, prices);
 });
