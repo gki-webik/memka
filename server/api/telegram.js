@@ -1,8 +1,10 @@
-import { defineEventHandler, useBody } from 'h3';
+// server/api/telegram.js
+import { defineEventHandler, readBody } from 'h3';
 import TelegramBot from 'node-telegram-bot-api';
 
+
 const botToken = '7600941340:AAF6MjBwenwZCiFUHkWIVZf7hAcYnHZu18Y';
-const webhookUrl = 'https://memka.vercel.app/api/telegram'; // Замените на ваш публичный URL
+const webhookUrl = 'https://memka.vercel.app/api/telegram';// Замените на ваш публичный URL
 
 // Инициализация бота
 const bot = new TelegramBot(botToken);
@@ -11,7 +13,7 @@ const bot = new TelegramBot(botToken);
 bot.setWebHook(webhookUrl);
 
 export default defineEventHandler(async (event) => {
-  const body = await useBody(event);
+  const body = await readBody(event);
 
   // Обработка входящих сообщений
   if (body.message) {
