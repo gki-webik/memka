@@ -6,7 +6,6 @@ const botToken = '7600941340:AAF6MjBwenwZCiFUHkWIVZf7hAcYnHZu18Y';
 const webhookUrl = 'https://memka.vercel.app/api/telegram';
 const bot = new TelegramBot(botToken, { webHook: true });
 
-
 bot.setWebHook(webhookUrl);
 
 bot.onText(/\/start/, (msg) => {
@@ -35,7 +34,9 @@ bot.onText(/\/invoice/, (msg) => {
   const providerToken = 'ВАШ_ТОКЕН_ПРОВАЙДЕРА';
   const startParameter = 'start';
   const currency = 'RUB';
-  const prices = [{ label: 'Цена', amount: 8000 }]; // 80 рублей в копейках
+  const prices = [
+    { label: 'Цена', amount: 8000 } // 80 рублей в копейках
+  ];
 
   console.log('Отправка инвойса:', {
     chatId, title, description, payload, providerToken, startParameter, currency, prices
@@ -59,7 +60,6 @@ export default defineEventHandler(async (event) => {
     return 'OK';
   } catch (error) {
     console.error('Ошибка обработки обновления:', error);
-    // Проверяем, есть ли информация о чате в теле запроса
     if (event.body && event.body.message && event.body.message.chat) {
       const chatId = event.body.message.chat.id;
       bot.sendMessage(chatId, `Ошибка обработки обновления: ${error.message}`);
