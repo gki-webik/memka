@@ -450,7 +450,7 @@ export default {
       mounted(el, binding) {
         const options = {
           root: null,
-          rootMargin: "500px",
+          rootMargin: "1000px",
           threshold: 0,
         };
 
