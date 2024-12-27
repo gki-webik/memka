@@ -1,0 +1,628 @@
+{
+    "ru": {
+        "block1": {
+            "h1": {
+                "part1": "СОЗДАЙТЕ",
+                "part2": "АЖ",
+                "part3": "ИОТАЖ",
+                "part4": "СРЕДИ ПОДПИСЧИКОВ  И ПРИВЛЕКИТЕ НОВЫХ ИНВЕСТОРОВ"
+            },
+            "button": {
+                "text": "ВПЕРЕД"
+            }
+        },
+        "block11": {
+            "h2": {
+                "part1": "О",
+                "part2": " Нас"
+            },
+            "text": "Мы креативное агентство, специализирующееся на анимации на заказ, дизайне наклеек и разработке персонажей в 2D и 3D форматах. Наша команда создает высококачественный визуальный контент, адаптированный для брендов, платформ социальных сетей и вовлечения сообщества. Мы помогаем компаниям выделиться благодаря уникальному дизайну, анимации и рекламным визуальным элементам, которые стимулируют взаимодействие с аудиторией и подчеркивают индивидуальность бренда."
+        },
+        "block3": {
+            "h2": {
+                "part1": "Ст",
+                "part2": "икеры"
+            },
+            "h3": "ПРИМЕР ПРОЕКТОВ РЕАЛИЗОВАННЫХ НАШЕЙ СТУДИЕЙ",
+            "items": [
+                {
+                    "src": "/assets/media/5.png",
+                    "class": "is-5",
+                    "titleClass": "title is-animated",
+                    "title": "Анимированный стикер"
+                },
+                {
+                    "src": "/assets/media/6.png",
+                    "class": "is-6",
+                    "titleClass": "title is-animated",
+                    "title": "Анимированный стикер"
+                },
+                {
+                    "src": "/assets/media/7.png",
+                    "class": "is-7",
+                    "titleClass": "title is-animated",
+                    "title": "Анимированный стикер"
+                },
+                {
+                    "src": "/assets/media/8.png",
+                    "class": "is-8",
+                    "titleClass": "title is-animated",
+                    "title": "Анимированный стикер"
+                },
+                {
+                    "src": "/assets/media/9.png",
+                    "class": "is-9",
+                    "titleClass": "title is-animated",
+                    "title": "Анимированный стикер"
+                },
+                {
+                    "src": "/assets/media/10.png",
+                    "class": "is-10",
+                    "titleClass": "title is-animated",
+                    "title": "Анимированный стикер"
+                },
+                {
+                    "src": "/assets/media/11.png",
+                    "class": "is-11",
+                    "titleClass": "title is-mem",
+                    "title": "Мем стикер"
+                },
+                {
+                    "src": "/assets/media/12.png",
+                    "class": "is-12",
+                    "titleClass": "title is-mem",
+                    "title": "Мем стикер"
+                },
+                {
+                    "src": "/assets/media/13.png",
+                    "class": "is-13",
+                    "titleClass": "title is-mem",
+                    "title": "Мем стикер"
+                },
+                {
+                    "src": "/assets/media/14.png",
+                    "class": "is-14",
+                    "titleClass": "title is-mem",
+                    "title": "Мем стикер"
+                },
+                {
+                    "src": "/assets/media/15.png",
+                    "class": "is-15",
+                    "titleClass": "title is-mem",
+                    "title": "Мем стикер"
+                },
+                {
+                    "src": "/assets/media/16.png",
+                    "class": "is-16",
+                    "titleClass": "title is-mem",
+                    "title": "Мем стикер"
+                },
+                {
+                    "src": "/assets/media/17.png",
+                    "class": "is-17",
+                    "titleClass": "title is-mem",
+                    "title": "Мем стикер"
+                },
+                {
+                    "src": "/assets/media/18.png",
+                    "class": "is-18",
+                    "titleClass": "title is-static",
+                    "title": "Статичный стикер"
+                },
+                {
+                    "src": "/assets/media/19.png",
+                    "class": "is-19",
+                    "titleClass": "title is-static",
+                    "title": "Статичный стикер"
+                },
+                {
+                    "src": "/assets/media/20.png",
+                    "class": "is-20",
+                    "titleClass": "title is-static",
+                    "title": "Статичный стикер"
+                },
+                {
+                    "src": "/assets/media/21.png",
+                    "class": "is-21",
+                    "titleClass": "title is-static",
+                    "title": "Статичный стикер"
+                },
+                {
+                    "src": "/assets/media/22.png",
+                    "class": "is-22",
+                    "titleClass": "title is-static",
+                    "title": "Статичный стикер"
+                }
+            ]
+        },
+        "block4": {
+            "h2": {
+                "part1": "Са",
+                "part2": "йты"
+            },
+            "h3": "ПРИМЕР ПРОЕКТОВ РЕАЛИЗОВАННЫХ НАШЕЙ СТУДИЕЙ",
+            "items": [
+                {
+                    "name": "23.png",
+                    "class": "is-1"
+                },
+                {
+                    "name": "24.png",
+                    "class": "is-2"
+                },
+                {
+                    "name": "46.png",
+                    "class": "is-3"
+                }
+            ]
+        },
+        "block5": {
+            "h2": {
+                "part1": "2D",
+                "part2": "Анимация"
+            },
+            "h3": "РАЗРАБОТКА ПЕРСОНАЖА В 2D И АНИМАЦИЯ",
+            "items": {
+                "images": [
+                    {
+                        "hero": "26.png",
+                        "img": "29.gif"
+                    },
+                    {
+                        "hero": "27.png",
+                        "img": "30.gif"
+                    },
+                    {
+                        "hero": "28.png",
+                        "img": "31.gif"
+                    }
+                ],
+                "videos": [
+                    {
+                        "ref": "video1",
+                        "src": "33.mp4",
+                        "isPlaying": false,
+                        "views": "3,2 млн"
+                    },
+                    {
+                        "ref": "video2",
+                        "src": "34.mp4",
+                        "isPlaying": false,
+                        "views": "1,9 млн"
+                    },
+                    {
+                        "ref": "video3",
+                        "src": "35.mp4",
+                        "isPlaying": false,
+                        "views": "4,1 млн"
+                    },
+                    {
+                        "ref": "video4",
+                        "src": "47.mp4",
+                        "isPlaying": false,
+                        "views": "3,6 млн"
+                    },
+                    {
+                        "ref": "video5",
+                        "src": "48.mp4",
+                        "isPlaying": false,
+                        "views": "2,5 млн"
+                    },
+                    {
+                        "ref": "video6",
+                        "src": "49.mp4",
+                        "isPlaying": false,
+                        "views": "3,3 млн"
+                    },
+                    {
+                        "ref": "video7",
+                        "src": "50.mp4",
+                        "isPlaying": false,
+                        "views": "2,4 млн"
+                    }
+                ]
+            }
+        },
+        "block6": {
+            "h2": {
+                "part1": "3D",
+                "part2": "Анимация"
+            },
+            "h3": "РАЗРАБОТКА ПЕРСОНАЖА В 3D И АНИМАЦИЯ",
+            "description1": "Разработка 3D персонажа",
+            "description2": "3D анимация (15 секунд)"
+        },
+        "block12": {
+            "h2": {
+                "part1": "Ка",
+                "part2": "к мы создаем персонажей"
+            }
+        },
+        "block8": {
+            "h2": {
+                "part1": "Ил",
+                "part2": "люстрации"
+            },
+            "h3": "И МНОГОЕ ДРУГОЕ!",
+            "items": [
+                {
+                    "img": "59.png",
+                    "description": "Крипто-кот"
+                },
+                {
+                    "img": "60.png",
+                    "description": "Крутой лемон"
+                },
+                {
+                    "img": "61.png",
+                    "description": "Котик на деньгах"
+                },
+                {
+                    "img": "62.png",
+                    "description": "Синс"
+                },
+                {
+                    "img": "63.png",
+                    "description": "Трамп"
+                },
+                {
+                    "img": "64.png",
+                    "description": "До небес"
+                }
+            ]
+        },
+        "block9": {
+            "h2": {
+                "part1": "Ре",
+                "part2": "клама"
+            },
+            "h3": "НАСТРОЙКА РЕКЛАМНЫХ КОМПАНИЙ",
+            "ads": [
+                {
+                    "title": "Instagram Direct",
+                    "description": "Массовые рассылки для привлечения клиентов или продвижения услуг"
+                },
+                {
+                    "title": "Telegram Messaging",
+                    "description": "Рассылка массовых сообщений для эффективного взаимодействия с вашей аудиторией"
+                },
+                {
+                    "title": "Facebook Ads",
+                    "description": "Настройка и управление рекламными кампаниями в любых нишах"
+                },
+                {
+                    "title": "Google Ads",
+                    "description": "Контекстная и баннерная реклама в любых нишах"
+                },
+                {
+                    "title": "Yandex Direct",
+                    "description": "Реклама для белых и серых ниш"
+                },
+                {
+                    "title": "Twitter Ads",
+                    "description": "Реклама для белых и серых ниш, индивидуальные стратегии"
+                }
+            ]
+        },
+        "block10": {
+            "h2": {
+                "part1": "Ко",
+                "part2": "нтакты"
+            },
+            "text": "СВЯЖИТЕСЬ С НАМИ, ЧТОБЫ ПОЛУЧИТЬ КОНТЕНТ, КОТОРЫЙ ПРИНЕСЕТ ВАМ ИЗВЕСТНОСТЬ И ПРИБЫЛЬ"
+        }
+    },
+    "en": {
+        "block1": {
+            "h1": {
+                "part1": "BUILD",
+                "part2": "HYPE",
+                "part3": " FOLLOWING",
+                "part4": "AMONGST DEGENS AND RETAIL INVESTORS"
+            },
+            "button": {
+                "text": "LETS GO"
+            }
+        },
+        "block11": {
+            "h2": {
+                "part1": "Ab",
+                "part2": "out us"
+            },
+            "text": "We are a creative agency specializing in custom animation, sticker design and character development in 2D and 3D formats. Our team creates high-quality visual content tailored for brands, social media platforms and community engagement. We help companies stand out through unique design, animation and promotional visual elements that stimulate interaction with the audience and emphasize the brand's personality."
+        },
+        "block3": {
+            "h2": {
+                "part1": "St",
+                "part2": "ickers"
+            },
+            "h3": "JUST A FEW OF THE PROJECTS WE'VE WORKED WITH",
+            "items": [
+                {
+                    "src": "/assets/media/5.png",
+                    "class": "is-5",
+                    "titleClass": "title is-animated",
+                    "title": "Animated Stickers"
+                },
+                {
+                    "src": "/assets/media/6.png",
+                    "class": "is-6",
+                    "titleClass": "title is-animated",
+                    "title": "Animated Stickers"
+                },
+                {
+                    "src": "/assets/media/7.png",
+                    "class": "is-7",
+                    "titleClass": "title is-animated",
+                    "title": "Animated Stickers"
+                },
+                {
+                    "src": "/assets/media/8.png",
+                    "class": "is-8",
+                    "titleClass": "title is-animated",
+                    "title": "Animated Stickers"
+                },
+                {
+                    "src": "/assets/media/9.png",
+                    "class": "is-9",
+                    "titleClass": "title is-animated",
+                    "title": "Animated Stickers"
+                },
+                {
+                    "src": "/assets/media/10.png",
+                    "class": "is-10",
+                    "titleClass": "title is-animated",
+                    "title": "Animated Stickers"
+                },
+                {
+                    "src": "/assets/media/11.png",
+                    "class": "is-11",
+                    "titleClass": "title is-mem",
+                    "title": "Memes Stickers"
+                },
+                {
+                    "src": "/assets/media/12.png",
+                    "class": "is-12",
+                    "titleClass": "title is-mem",
+                    "title": "Memes Stickers"
+                },
+                {
+                    "src": "/assets/media/13.png",
+                    "class": "is-13",
+                    "titleClass": "title is-mem",
+                    "title": "Memes Stickers"
+                },
+                {
+                    "src": "/assets/media/14.png",
+                    "class": "is-14",
+                    "titleClass": "title is-mem",
+                    "title": "Memes Stickers"
+                },
+                {
+                    "src": "/assets/media/15.png",
+                    "class": "is-15",
+                    "titleClass": "title is-mem",
+                    "title": "Memes Stickers"
+                },
+                {
+                    "src": "/assets/media/16.png",
+                    "class": "is-16",
+                    "titleClass": "title is-mem",
+                    "title": "Memes Stickers"
+                },
+                {
+                    "src": "/assets/media/17.png",
+                    "class": "is-17",
+                    "titleClass": "title is-mem",
+                    "title": "Memes Stickers"
+                },
+                {
+                    "src": "/assets/media/18.png",
+                    "class": "is-18",
+                    "titleClass": "title is-static",
+                    "title": "Static Stickers"
+                },
+                {
+                    "src": "/assets/media/19.png",
+                    "class": "is-19",
+                    "titleClass": "title is-static",
+                    "title": "Static Stickers"
+                },
+                {
+                    "src": "/assets/media/20.png",
+                    "class": "is-20",
+                    "titleClass": "title is-static",
+                    "title": "Static Stickers"
+                },
+                {
+                    "src": "/assets/media/21.png",
+                    "class": "is-21",
+                    "titleClass": "title is-static",
+                    "title": "Static Stickers"
+                },
+                {
+                    "src": "/assets/media/22.png",
+                    "class": "is-22",
+                    "titleClass": "title is-static",
+                    "title": "Static Stickers"
+                }
+            ]
+        },
+        "block4": {
+            "h2": {
+                "part1": "Si",
+                "part2": "tes"
+            },
+            "h3": "JUST A FEW OF THE PROJECTS WE'VE WORKED WITH",
+            "items": [
+                {
+                    "name": "23.png",
+                    "class": "is-1"
+                },
+                {
+                    "name": "24.png",
+                    "class": "is-2"
+                },
+                {
+                    "name": "46.png",
+                    "class": "is-3"
+                }
+            ]
+        },
+        "block5": {
+            "h2": {
+                "part1": "2D",
+                "part2": "Animation"
+            },
+            "h3": "2D CHARACTER DESIGN AND ANIMATION",
+            "items": {
+                "images": [
+                    {
+                        "hero": "26.png",
+                        "img": "29.gif"
+                    },
+                    {
+                        "hero": "27.png",
+                        "img": "30.gif"
+                    },
+                    {
+                        "hero": "28.png",
+                        "img": "31.gif"
+                    }
+                ],
+                "videos": [
+                    {
+                        "ref": "video1",
+                        "src": "33.mp4",
+                        "isPlaying": false,
+                        "views": "3,2 mln"
+                    },
+                    {
+                        "ref": "video2",
+                        "src": "34.mp4",
+                        "isPlaying": false,
+                        "views": "1,9 mln"
+                    },
+                    {
+                        "ref": "video3",
+                        "src": "35.mp4",
+                        "isPlaying": false,
+                        "views": "4,1 mln"
+                    },
+                    {
+                        "ref": "video4",
+                        "src": "47.mp4",
+                        "isPlaying": false,
+                        "views": "3,6 mln"
+                    },
+                    {
+                        "ref": "video5",
+                        "src": "48.mp4",
+                        "isPlaying": false,
+                        "views": "2,5 mln"
+                    },
+                    {
+                        "ref": "video6",
+                        "src": "49.mp4",
+                        "isPlaying": false,
+                        "views": "3,3 mln"
+                    },
+                    {
+                        "ref": "video7",
+                        "src": "50.mp4",
+                        "isPlaying": false,
+                        "views": "2,4 mln"
+                    }
+                ]
+            }
+        },
+        "block6": {
+            "h2": {
+                "part1": "3D",
+                "part2": "Animation"
+            },
+            "h3": "3D CHARACTER DESIGN AND ANIMATION",
+            "description1": "Design 3D character",
+            "description2": "3D animation (15 seconds)"
+        },
+        "block12": {
+            "h2": {
+                "part1": "Ho",
+                "part2": "w do we create characters"
+            }
+        },
+        "block8": {
+            "h2": {
+                "part1": "Il",
+                "part2": "lustration"
+            },
+            "h3": "AND MUCH MORE!",
+            "items": [
+                {
+                    "img": "59.png",
+                    "description": "The Crypto Cat"
+                },
+                {
+                    "img": "60.png",
+                    "description": "Cool lemon"
+                },
+                {
+                    "img": "61.png",
+                    "description": "The cat is on the money"
+                },
+                {
+                    "img": "62.png",
+                    "description": "Sins"
+                },
+                {
+                    "img": "63.png",
+                    "description": "Trump"
+                },
+                {
+                    "img": "64.png",
+                    "description": "Up to heaven"
+                }
+            ]
+        },
+        "block9": {
+            "h2": {
+                "part1": "Se",
+                "part2": "tup campaign"
+            },
+            "h3": "SETUP AND MANAGEMENT OF AD CAMPAIGNS",
+            "ads": [
+                {
+                    "title": "Instagram Direct",
+                    "description": "Mass messaging to engage clients or promote services"
+                },
+                {
+                    "title": "Telegram Messaging",
+                    "description": "Bulk messages to connect with your audience effectively"
+                },
+                {
+                    "title": "Facebook Ads",
+                    "description": "Setup and management of ad campaigns, any niches"
+                },
+                {
+                    "title": "Google Ads",
+                    "description": "Contextual and banner ads, any niches"
+                },
+                {
+                    "title": "Yandex Direct",
+                    "description": "Ads for white and gray niches "
+                },
+                {
+                    "title": "Twitter Ads",
+                    "description": "Ads for white and gray niches, tailored strategies"
+                }
+            ]
+        },
+        "block10": {
+            "h2": {
+                "part1": "Ou",
+                "part2": "r contacts"
+            },
+            "text": "CONTACT THE LEADING WEB3 MARKETING AGENCY FOR CONTENT THAT WINS"
+        }
+    }
+}

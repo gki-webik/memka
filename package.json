@@ -1,0 +1,22 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^3.3.5",
+    "node-fetch": "^3.3.2",
+    "node-telegram-bot-api": "^0.66.0",
+    "nuxt": "^3.14.1592",
+    "telegraf": "^4.16.3",
+    "vercel-php": "^0.7.3",
+    "vue": "latest",
+    "vue-router": "latest"
+  }
+}

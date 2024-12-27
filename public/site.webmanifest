@@ -1,0 +1,16 @@
+{
+    "name": "The Meme Protocol",
+    "short_name": "The Meme Protocol",
+    "start_url": "",
+    "display": "standalone",
+    "background_color": "#0A1C0C",
+    "theme_color": "#0A1C0C",
+    "description": "The Meme Protocol - Your ultimate source for memes and humor.",
+    "icons": [
+        {
+            "src": "/assets/media/logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

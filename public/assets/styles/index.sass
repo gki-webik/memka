@@ -1,0 +1,1002 @@
+@import "colors"
+.block1
+    margin-top: 70px
+    display: flex
+    justify-content: space-between
+    max-height: 1200px
+    overflow-x: hidden
+    height: calc(100vh - 70px)
+    .center
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0 30px
+        gap: 20px
+        width: 100%
+        @media screen and (max-width: 955px)
+            flex-direction: column-reverse
+            justify-content: center
+            align-items: center
+            gap: 40px
+    .text
+        h1
+            display: flex
+            flex-direction: column
+            gap: 23px
+            color: #fff
+            @media screen and (max-width: 955px)
+                text-align: center
+            span
+                &.is-1
+                    font-size: 4rem
+                    line-height: 0.9
+                    @media screen and (max-width: 1310px)
+                        font-size: 3rem
+                    @media screen and (max-width: 1000px)
+                        font-size: 2.6rem
+                    @media screen and (max-width: 395px)
+                        font-size: 2.3rem
+                &.is-2
+                    font-size: 7rem
+                    color: $color-1
+                    &.is-small
+                        font-size: 6rem
+                    @media screen and (max-width: 1310px)
+                        font-size: 5.5rem
+                        &.is-small
+                            font-size: 5.5rem
+                    @media screen and (max-width: 1000px)
+                        font-size: 4rem
+                        &.is-small
+                            font-size: 4rem
+                    @media screen and (max-width: 395px)
+                        font-size: 3.3rem
+                        &.is-small
+                            font-size: 3.3rem
+                &.is-line
+                    border-bottom: 2px solid $color-1
+                &.is-3
+                    font-size: 2.3rem
+                    line-height: 1.5
+                    @media screen and (max-width: 1310px)
+                        font-size: 2rem
+                    @media screen and (max-width: 1225px)
+                        font-size: 1.6rem
+                    @media screen and (max-width: 1000px)
+                        font-size: 1.4rem
+                    @media screen and (max-width: 395px)
+                        font-size: 1.2rem
+
+        a.lets_go
+            font-size: 3.5rem
+            color: #fff
+            text-decoration: none
+            width: 270px
+            height: 50px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 1.4rem
+            outline: 1px solid #fff
+            cursor: pointer
+            position: relative
+            font-weight: 600
+            transition: color 0.15s ease-in-out
+            @media screen and (max-width: 955px)
+                margin: 0 auto
+            &:hover
+                color: $color-1
+            &:hover
+                span
+                    transition: top 0.15s ease-in-out, transform 0.15s ease-in-out, right 0.15s ease-in-out, left 0.15s ease-in-out
+                    &.is-1
+                        top: -10px
+                        left: 10px
+                        transform: rotate(-90deg)
+                    &.is-2
+                        right: 10px
+                        top: 20px
+                        transform: rotate(90deg)
+            span
+                position: absolute
+                width: 0
+                height: 0
+                border-top: 20px solid $color-1
+                border-left: 20px solid transparent
+                border-bottom: 20px solid transparent
+                transition: top 0.15s ease-in-out, transform 0.15s ease-in-out, right 0.15s ease-in-out, left 0.15s ease-in-out
+                &.is-1
+                    left: 0
+                    bottom: 0
+                    transform: rotate(-180deg)
+                &.is-2
+                    right: 0
+                    top: 0
+    .hackerImg
+        margin-right: 30px
+        position: relative
+        user-select: none
+        pointer-events: none
+        @media screen and (max-width: 634px)
+            margin-right: 0px
+        img
+            &.is-1
+                width: 550px
+                height: 490px
+                object-fit: cover
+                box-shadow: 0 0 38px #00cf0e40
+                @media screen and (max-width: 1210px)
+                    width: 450px
+                    height: 390px
+                @media screen and (max-width: 634px)
+                    width: 350px
+                    height: 290px
+                @media screen and (max-width: 485px)
+                    width: 300px
+                    height: 200px
+            &.is-2
+                position: absolute
+                left: 0px
+                top: -100px
+                width: 630px
+                @media screen and (max-width: 1210px)
+                    width: 530px
+                @media screen and (max-width: 634px)
+                    width: 430px
+                @media screen and (max-width: 485px)
+                    width: 300px
+                    top: -60px
+                    left: 20px
+
+.block11
+    padding: 75px 50px
+    @media screen  and (max-width: 400px)
+        padding: 75px 20px
+    h2
+        color: $color-1
+        font-size: 3rem
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
+        span
+            &.is-line
+                border-bottom: 2px solid $color-1
+    .content
+        display: flex
+        gap: 40px
+        justify-content: space-between
+        @media screen  and (max-width: 885px)
+            flex-direction: column
+            align-items: center
+            justify-content: center
+        img
+            width: 100%
+            object-fit: contain
+            @media screen  and (max-width: 1193px)
+                width: 400px
+            @media screen  and (max-width: 978px)
+                width: 300px
+            @media screen  and (max-width: 520px)
+                display: none
+        .text
+            line-height: 1.6
+            color: #fff
+            font-weight: 500
+            font-size: 2rem
+            display: flex
+            align-items: center
+            @media screen  and (max-width: 1373px)
+                font-size: 1.5rem
+            @media screen  and (max-width: 1105px)
+                font-size: 1.3rem
+            @media screen  and (max-width: 978px)
+                font-size: 1.2rem
+            @media screen  and (max-width: 885px)
+                text-align: center
+            @media screen  and (max-width: 520px)
+                font-size: 1.1rem
+                text-align: left
+            @media screen  and (max-width: 430px)
+                font-size: 1rem
+.block2
+    padding: 75px 50px
+    @media screen  and (max-width: 400px)
+        padding: 75px 20px
+    h2
+        color: $color-1
+        font-size: 3rem
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
+        span
+            &.is-line
+                border-bottom: 2px solid $color-1
+    .items
+        display: flex
+        justify-content: space-between
+        @media screen and (max-width: 750px)
+            flex-direction: column
+            gap: 20px
+        .item
+            display: flex
+            flex-direction: column
+            gap: 15px
+            @media screen and (min-width: 751px)
+                &.is-2
+                    flex-direction: column-reverse
+            .text
+                color: #fff
+                font-weight: 600
+                font-size: 1.6rem
+                line-height: 1.4
+                &.is-right
+                    text-align: right
+                @media screen and (max-width: 950px)
+                    font-size: 1.3rem
+                @media screen and (max-width: 500px)
+                    font-size: 1.1rem
+            img
+                user-select: none
+                pointer-events: none
+                width: 100%
+.block3
+    padding: 75px 50px
+    @media screen  and (max-width: 400px)
+        padding: 75px 20px
+    h2
+        color: $color-1
+        font-size: 3rem
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
+        span
+            &.is-line
+                border-bottom: 2px solid $color-1
+
+    h3
+        color: #fff
+        font-size: 1.6rem
+        line-height: 1.4
+        @media screen and (max-width: 400px)
+            font-size: 1.3rem
+
+    .items
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        gap: 20px
+        .item
+            position: relative
+            height: 250px
+            width: 315px
+            @media screen and (max-width: 732px)
+                height: 200px
+                width: 300px
+            @media screen and (max-width: 744px)
+                width: 200px
+                height: 135px
+            @media screen and (max-width: 521px)
+                width: 138px
+                height: 150px
+            &::before
+                content: ""
+                position: absolute
+                bottom: 0
+                width: 100%
+                height: 150px
+                border-radius: 15px
+                background: linear-gradient(230deg, $color-1, green)
+                box-shadow: 0 0 25px 4px $color-3
+                @media screen and (max-width: 744px)
+                    height: 100px
+                @media screen and (max-width: 521px)
+                    height: 70px
+                    border-radius: 10px
+            img
+                width: 100%
+                bottom: 0
+                position: absolute
+                user-select: none
+                pointer-events: none
+                object-fit: contain
+                height: 225px
+                @media screen and (max-width: 744px)
+                    height: 120px
+                @media screen and (max-width: 521px)
+                    height: 100px
+                &.is-17
+                    right: -50px
+                    @media screen and (max-width: 744px)
+                        right: -44px
+                    @media screen and (max-width: 521px)
+                        right: -21px
+                &.is-12
+                    left: -40px
+                    @media screen and (max-width: 744px)
+                        left: -37px
+                    @media screen and (max-width: 521px)
+                        left: -16px
+            .title
+                text-align: center
+                color: $color-1
+                position: absolute
+                bottom: -28px
+                font-weight: 600
+                width: 100%
+                display: flex
+                justify-content: center
+                align-items: start
+                @media screen and (max-width: 521px)
+                    font-size: 0.9rem
+                    &:not(.is-mem):not(.is-static)
+                        bottom: -46px
+.block4
+    padding: 75px 50px
+    overflow-x: hidden
+    @media screen and (max-width: 945px)
+        padding: 75px 0px
+    h2
+        color: $color-1
+        font-size: 3rem
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
+        @media screen and (max-width: 945px)
+            padding: 10px 20px
+        span
+            &.is-line
+                border-bottom: 2px solid $color-1
+
+    h3
+        color: #fff
+        font-size: 1.6rem
+        line-height: 1.4
+        @media screen and (max-width: 945px)
+            padding: 0px 20px 10px 20px
+        @media screen and (max-width: 400px)
+            font-size: 1.3rem
+    .works
+        position: relative
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        align-items: center
+        @media screen and (min-width: 854px)
+            gap: 40px
+        img
+            max-width: 600px
+            width: 100%
+            user-select: none
+            pointer-events: none
+            @media screen and (max-width: 1352px)
+                max-width: 500px
+            @media screen and (max-width: 1152px)
+                max-width: 400px
+            @media screen and (max-width: 853px)
+                max-width: 1000px
+.block5
+    padding: 75px 0px
+    overflow: hidden
+    h2
+        color: $color-1
+        font-size: 3rem
+        padding-left: 50px
+        padding-right: 50px
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
+        @media screen  and (max-width: 515px)
+            padding-left: 20px
+            padding-right: 20px
+        span
+            &.is-line
+                border-bottom: 2px solid $color-1
+
+    h3
+        color: #fff
+        font-size: 1.6rem
+        line-height: 1.4
+        padding-left: 50px
+        padding-right: 50px
+        @media screen and (max-width: 400px)
+            font-size: 1.3rem
+        @media screen  and (max-width: 515px)
+            padding-left: 20px
+            padding-right: 20px
+
+    .items
+        display: flex
+        justify-content: space-around
+        align-items: center
+        flex-wrap: wrap
+        padding-left: 30px
+        padding-right: 30px
+        gap: 100px
+        @media screen  and (max-width: 515px)
+            padding-left: 20px
+            padding-right: 20px
+        &.is-2
+            margin-top: 100px
+        &.is-3
+            margin-top: 100px
+            flex-wrap: nowrap
+            gap: 0
+            padding-left: 0px
+            padding-right: 0px
+            @media screen  and (max-width: 550px)
+                flex-direction: column
+            .video
+                width: 100%
+                position: relative
+                img
+                    user-select: none
+                    pointer-events: none
+                & .cp
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    cursor: pointer
+                    width: 200px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    z-index: 15
+                    img
+                        width: 200px
+                    @media screen and (max-width: 970px)
+                        width: 100px
+                        img
+                            width: 100px
+                video
+                    user-select: none
+                    width: 100%
+
+        @media screen and (max-width: 592px)
+            gap: 30px
+        .item
+            position: relative
+            .phone
+                width: 370px
+                position: relative
+                overflow: hidden
+                @media screen and (max-width: 970px)
+                    width: 190px
+                @media screen and (max-width: 592px)
+                    width: 115px
+                img
+                    user-select: none
+                    pointer-events: none
+                    &.is-1
+                        width: 370px
+                        position: relative
+                        z-index: 5
+                        @media screen and (max-width: 970px)
+                            width: 190px
+                        @media screen and (max-width: 592px)
+                            width: 115px
+                    &.is-2
+                        position: absolute
+                        left: -330px
+                        top: 85px
+                        height: 580px
+                        @media screen and (max-width: 970px)
+                            height: 305px
+                            top: 40px
+                            left: -177px
+                        @media screen and (max-width: 592px)
+                            height: 184px
+                            left: -106px
+                            top: 22px
+                & .is-views
+                    color: #fff
+                    position: absolute
+                    z-index: 9
+                    bottom: 55px
+                    right: 50px
+                    font-size: 20px
+                    @media screen and (max-width: 970px)
+                        bottom: 29px
+                        right: 20px
+                        font-size: 13px
+                    @media screen and (max-width: 592px)
+                        bottom: 17px
+                        right: 10px
+                        font-size: 10px
+                & .cp
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    cursor: pointer
+                    width: 200px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    z-index: 15
+                    img
+                        width: 200px
+                    @media screen and (max-width: 970px)
+                        width: 100px
+                        img
+                            width: 100px
+                video
+                    user-select: none
+                    pointer-events: none
+                    &.is-2
+                        position: absolute
+                        left: 9px
+                        top: 50px
+                        height: 610px
+                        @media screen and (max-width: 970px)
+                            height: 304px
+                            top: 42px
+                            left: 9px
+                        @media screen and (max-width: 592px)
+                            height: 184px
+                            left: 6px
+                            top: 22px
+            img
+                user-select: none
+                pointer-events: none
+                &.is-3
+                    position: absolute
+                    left: -100px
+                    bottom: -50px
+                    z-index: 10
+                    @media screen and (max-width: 970px)
+                        height: 200px
+                        left: -70px
+                    @media screen and (max-width: 592px)
+                        height: 112px
+                        left: -27px
+                        bottom: -20px
+.block6
+    padding: 75px 50px
+    overflow: hidden
+    @media screen  and (max-width: 655px)
+        padding: 75px 0px 20px 0
+    h2
+        color: $color-1
+        font-size: 3rem
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
+        @media screen  and (max-width: 655px)
+            padding: 10px 20px
+        span
+            &.is-line
+                border-bottom: 2px solid $color-1
+
+    h3
+        color: #fff
+        font-size: 1.6rem
+        line-height: 1.4
+        @media screen  and (max-width: 655px)
+            padding: 0px 20px
+        @media screen and (max-width: 400px)
+            font-size: 1.3rem
+    .items
+        display: flex
+        justify-content: space-between
+        margin-top: 50px
+        gap: 100px
+        @media screen and (max-width: 655px)
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 20px
+        .item
+            position: relative
+            overflow: hidden
+            @media screen  and (max-width: 655px)
+                width: 100%
+        video
+            pointer-events: all !important
+        img.is-1, video.is-2
+            user-select: none
+            pointer-events: none
+            height: 500px
+            @media screen and (max-width: 1400px)
+                height: 400px
+            @media screen and (max-width: 1324px)
+                height: 300px
+            @media screen and (max-width: 1050px)
+                height: 200px
+            @media screen and (max-width: 840px)
+                height: 170px
+            @media screen and (max-width: 655px)
+                height: 100%
+                width: 100%
+        .video
+            position: relative
+            & .cp
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                cursor: pointer
+                width: 200px
+                display: flex
+                justify-content: center
+                align-items: center
+                z-index: 15
+                img
+                    width: 200px
+                    @media screen and (max-width: 970px)
+                        width: 100px
+                        img
+                            width: 100px
+        .description
+            margin-top: 15px
+            @media screen  and (max-width: 655px)
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                padding: 13px
+                .bg
+                    background: rgb(0 0 0 / 60%)
+                    position: absolute
+                    filter: blur(23px)
+                    bottom: -50px
+                    left: 0
+                    width: 100%
+                    height: 150px
+                    left: -50px
+
+            .title
+                color: $color-1
+                font-size: 1.3rem
+                font-weight: 600
+                position: relative
+                z-index: 5
+                @media screen  and (max-width: 455px)
+                    font-size: 1rem
+            .cost
+                color: #fff
+                font-size: 2.5rem
+                font-weight: 600
+                position: relative
+                z-index: 5
+                @media screen  and (max-width: 455px)
+                    font-size: 2rem
+.block7
+    position: relative
+    .fullWidthVideo
+        position: relative
+        &:not(:last-child)
+            border-bottom: 2px solid $color-1
+        video
+            width: 100%
+            display: block
+        .cp
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            cursor: pointer
+            width: 200px
+            display: flex
+            justify-content: center
+            align-items: center
+            z-index: 15
+            img
+                width: 200px
+                @media screen and (max-width: 970px)
+                    width: 100px
+                    img
+                        width: 100px
+.block8
+    padding: 75px 50px
+    overflow: hidden
+    @media screen  and (max-width: 655px)
+        padding: 75px 0px 20px 0
+    h2
+        color: $color-1
+        font-size: 3rem
+        @media screen  and (max-width: 655px)
+            padding: 10px 20px
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
+
+        span
+            &.is-line
+                border-bottom: 2px solid $color-1
+    h3
+        color: #fff
+        font-size: 2.7rem
+        margin-top: 100px
+        padding: 0 10px
+        text-align: center
+        @media screen  and (max-width: 425px)
+            font-size: 2.1rem
+
+    .items
+        display: flex
+        align-items: center
+        gap: 50px
+        flex-wrap: wrap
+        @media screen and (max-width: 610px)
+            justify-content: center
+
+        .item
+            display: flex
+            flex-direction: column
+            gap: 20px
+            img
+                user-select: none
+                pointer-events: none
+                width: 330px
+                @media screen and (max-width: 1255px)
+                    width: 300px
+                @media screen and (max-width: 1110px)
+                    width: 400px
+                @media screen and (max-width: 965px)
+                    width: 300px
+                @media screen and (max-width: 765px)
+                    width: 270px
+                @media screen and (max-width: 702px)
+                    width: 230px
+                @media screen and (max-width: 610px)
+                    width: 200px
+                @media screen and (max-width: 490px)
+                    width: 150px
+                @media screen and (max-width: 396px)
+                    width: 130px
+            .description
+                display: flex
+                flex-direction: column
+                .title
+                    color: $color-1
+                    font-size: 1.3rem
+                    font-weight: 600
+                    position: relative
+                    z-index: 5
+                    @media screen and (max-width: 490px)
+                        font-size: 1rem
+                .cost
+                    color: #fff
+                    font-size: 2.5rem
+                    font-weight: 600
+                    position: relative
+                    z-index: 5
+                    @media screen and (max-width: 490px)
+                        font-size: 1.7rem
+.block9
+    padding: 75px 50px
+    overflow: hidden
+    @media screen  and (max-width: 655px)
+        padding: 75px 0px 20px 0
+    h2
+        color: $color-1
+        font-size: 3rem
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
+        @media screen  and (max-width: 655px)
+            padding: 10px 20px
+        span
+            &.is-line
+                border-bottom: 2px solid $color-1
+
+    h3
+        color: #fff
+        font-size: 1.6rem
+        line-height: 1.4
+        @media screen  and (max-width: 655px)
+            padding: 0px 20px
+        @media screen and (max-width: 400px)
+            font-size: 1.3rem
+    .table
+        @media screen and (max-width: 700px)
+            max-width: 750px
+            overflow: auto
+            margin: 0 auto
+            scrollbar-color: $color-2 $color-3 !important
+            scrollbar-width: thin !important
+            &::-webkit-scrollbar
+                width: 6px !important
+                height: 6px !important
+
+            &::-webkit-scrollbar-thumb
+                background: $color-2 !important
+                border-radius: 20px !important
+
+            &::-webkit-scrollbar-track
+                background: $color-2 !important
+
+    table
+        width: 100%
+        margin: 0 auto
+        color: #fff
+        font-weight: 600
+        @media screen and (max-width: 654px)
+            padding: 0 20px
+        @media screen and (max-width: 700px)
+            min-width: 750px
+        thead
+            tr
+                th
+                    text-align: left
+                    padding: 10px 0
+                    border-bottom: 2px solid $color-1
+        .title
+            min-width: 250px
+            color: $color-1
+            @media screen and (max-width: 500px)
+                min-width: 150px
+        .cost
+            min-width: 120px
+        tbody
+            td
+                padding: 10px 0
+                .title
+                    color: $color-1
+.block10
+    padding: 75px 50px
+    overflow: hidden
+    @media screen  and (max-width: 655px)
+        padding: 75px 0px 20px 0
+    h2
+        color: $color-1
+        font-size: 3rem
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
+        @media screen  and (max-width: 655px)
+            padding: 10px 20px
+        span
+            &.is-line
+                border-bottom: 2px solid $color-1
+    .content
+        display: flex
+        justify-content: space-around
+        gap: 50px
+        max-width: 1300px
+        @media screen and (max-width: 1045px)
+            gap: 30px
+        @media screen and (max-width: 847px)
+            flex-direction: column
+            gap: 70px
+    .left
+        height: 500px
+        width: 100%
+        display: flex
+        flex-direction: column
+        position: relative
+        overflow: hidden
+        justify-content: space-between
+        @media screen and (max-width: 1130px)
+            height: 350px
+        .tg
+            display: flex
+            align-items: center
+            gap: 15px
+            font-size: 1.4rem
+            color: #fff
+            font-weight: 600
+            @media screen and (max-width: 847px)
+                position: absolute
+                bottom: 0
+                left: 0
+                width: 100%
+                padding: 13px
+                .bg
+                    background: rgba(0, 0, 0, .6)
+                    position: absolute
+                    filter: blur(23px)
+                    bottom: -74px
+                    left: -30px
+                    width: 105%
+                    height: 150px
+            a
+                color: #fff
+                text-decoration: none
+                cursor: pointer
+                transition: 0.15s color ease-in-out
+                position: relative
+                z-index: 9
+                &:hover
+                    color: $color-1
+        img
+            &.is-1
+                height: 400px
+                width: 400px
+                object-fit: cover
+                @media screen and (max-width: 1130px)
+                    height: 300px
+                    width: 300px
+                @media screen and (max-width: 847px)
+                    height: 100%
+                    width: 100%
+            &.is-2
+                background-color: $color-1
+                border-radius: 9999px
+                width: 40px
+                height: 40px
+                padding: 5px
+                display: flex
+                align-items: center
+                justify-content: center
+                position: relative
+                z-index: 9
+    .right
+        height: 500px
+        width: 130%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        @media screen and (max-width: 1130px)
+            height: 350px
+        @media screen and (max-width: 847px)
+            padding: 0 20px
+            width: 100%
+        @media screen and (max-width: 460px)
+            padding: 0px
+        .top
+            display: flex
+            justify-content: space-between
+            @media screen and (max-width: 460px)
+                align-items: center
+                justify-content: center
+                .is-2
+                    display: none
+        .bottom
+            font-weight: 600
+            font-size: 1.5rem
+            color: #fff
+            line-height: 1.3
+            @media screen and (max-width: 1130px)
+                font-size: 1.3rem
+            @media screen and (max-width: 460px)
+                text-align: center
+                padding: 0 20px
+                font-size: 1.2rem
+        img
+            height: 300px
+            @media screen and (max-width: 1130px)
+                height: 200px
+                width: 200px
+.block12
+    padding: 75px 0px
+    overflow: hidden
+    h2
+        color: $color-1
+        font-size: 3rem
+        padding-left: 50px
+        padding-right: 50px
+        @media screen  and (max-width: 425px)
+            font-size: 2.5rem
+        @media screen  and (max-width: 515px)
+            padding-left: 20px
+            padding-right: 20px
+        span
+            &.is-line
+                border-bottom: 2px solid $color-1
+
+    h3
+        color: #fff
+        font-size: 1.6rem
+        line-height: 1.4
+        padding-left: 50px
+        padding-right: 50px
+        @media screen and (max-width: 400px)
+            font-size: 1.3rem
+        @media screen  and (max-width: 515px)
+            padding-left: 20px
+            padding-right: 20px
+    .items
+        display: flex
+        @media screen and (max-width: 515px)
+            flex-wrap: wrap
+        .item
+            width: 100%
+    img
+        user-select: none
+        pointer-events: none
+        display: block
+        width: 100%
+        &.is-1
+            @media screen and (min-width: 516px)
+                border-right: 4px solid $color-1
+        &.is-1,
+        &.is-2
+            object-fit: cover
+            aspect-ratio: 1 / 1
+            border-bottom: 3px solid $color-1
+            @media screen and (max-width: 515px)
+                aspect-ratio: 4 / 3

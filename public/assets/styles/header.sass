@@ -1,0 +1,95 @@
+@import "colors"
+header
+    margin: 0
+    padding: 0
+    position: fixed
+    width: 100%
+    height: 70px
+    max-width: 2155px
+    top: 0
+    z-index: 9999
+    .content
+        align-items: center
+        display: flex
+        width: 100%
+        height: 70px
+        color: #fff
+        justify-content: space-between
+        border-bottom: 1px solid $color-3
+        position: relative
+        z-index: 3
+        padding: 0 20px
+        .logo
+            img
+                cursor: pointer
+                height: 60px
+        nav
+            display: flex
+            justify-content: center
+            gap: 30px
+            width: 100%
+            a
+                color: #fff
+                text-decoration: none
+                transition: color ease-in-out 0.15s
+                &:hover
+                    color: $color-1
+
+            @media screen and (max-width: 1122px)
+                left: -100% !important
+                transition: left 0.15s ease-in-out
+                position: fixed
+                flex-direction: column
+                top: 70px
+                backdrop-filter: blur(50px)
+                z-index: 5
+                padding: 40px 20px
+                gap: 20px
+                left: 0
+                justify-content: start
+                height: 100vh
+                &.is-open
+                    left: 0 !important
+        .menuToggle
+            padding: 5px
+            height: 40px
+            width: 40px
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            gap: 5px
+            cursor: pointer
+            @media screen and (min-width: 1123px)
+                display: none !important
+            &.is-open
+                span
+                    &.is-1
+                        width: 20px
+                        margin-left: 15px
+                    &.is-2
+                        width: 35px
+                        margin-left: 0px
+            span
+                display: block
+                height: 2px
+                background-color: #fff
+                transition: background-color ease-in-out 0.15s, width ease-in-out 0.15s, margin-left ease-in-out 0.15s
+                &.is-1
+                    width: 35px
+                    margin-left: 0px
+                &.is-2
+                    width: 20px
+                    margin-left: 15px
+            &:hover span
+                background-color: $color-1
+
+    .is-blur
+        width: 100%
+        height: 70px
+        backdrop-filter: blur(50px)
+        background-color: #0b1d0d5e
+        position: absolute
+        top: 0
+        right: 0
+        left: 0
