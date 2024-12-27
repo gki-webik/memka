@@ -131,7 +131,7 @@
           <video
             ref="video942993"
             class="is-2"
-            poster="/assets/media/poster_51.mp4"
+            poster="/assets/media/poster_51.png"
             v-lazy="'/assets/media/51.mp4'"
             @click="togglePlay('video942993', 1)"
             @ended="onVideoEnd('video942993')"
@@ -152,7 +152,7 @@
           <video
             ref="video772443"
             class="is-2"
-            poster="/assets/media/poster_52.mp4"
+            poster="/assets/media/poster_52.png"
             v-lazy="'/assets/media/52.mp4'"
             @click="togglePlay('video772443', 1)"
             @ended="onVideoEnd('video772443')"
