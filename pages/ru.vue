@@ -106,6 +106,7 @@
             <video
               :ref="`video${index}`"
               class="is-2"
+              :poster="'/assets/media/poster_' + item.src"
               v-lazy="'/assets/media/' + item.src"
               @click="togglePlay('video' + index, 2)"
               @ended="onVideoEnd('video' + index)"
@@ -130,6 +131,7 @@
           <video
             ref="video942993"
             class="is-2"
+            poster="/assets/media/poster_51.mp4"
             v-lazy="'/assets/media/51.mp4'"
             @click="togglePlay('video942993', 1)"
             @ended="onVideoEnd('video942993')"
@@ -150,6 +152,7 @@
           <video
             ref="video772443"
             class="is-2"
+            poster="/assets/media/poster_52.mp4"
             v-lazy="'/assets/media/52.mp4'"
             @click="togglePlay('video772443', 1)"
             @ended="onVideoEnd('video772443')"
@@ -220,6 +223,7 @@
         <video
           ref="video232401"
           class="is-2"
+          poster="/assets/media/poster_32.png"
           v-lazy="'/assets/media/32.mp4'"
           @click="togglePlay('video232401', 1)"
           @ended="onVideoEnd('video232401')"
@@ -240,6 +244,7 @@
         <video
           ref="video82358"
           class="is-2"
+          poster="/assets/media/poster_55.png"
           v-lazy="'/assets/media/55.mp4'"
           @click="togglePlay('video82358', 1)"
           @ended="onVideoEnd('video82358')"
