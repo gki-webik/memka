@@ -106,7 +106,7 @@
             <video
               :ref="`video${index}`"
               class="is-2"
-              :poster="'/assets/media/poster_' + item.src"
+              :poster="'/assets/media/poster_' + item.src + '.png'"
               v-lazy="'/assets/media/' + item.src"
               @click="togglePlay('video' + index, 2)"
               @ended="onVideoEnd('video' + index)"
